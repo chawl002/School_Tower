@@ -15,7 +15,14 @@ public class EnemyMove : MonoBehaviour {
 			                                speed);
 			rigidbody2D.MovePosition (p);
 		} 
+		// Last Waypoint reached, destroy enemy
+		else if (cur == waypoints.Length - 1) {
+			Destroy(this.gameObject);
+		}
 		// Waypoint reached, select next one
-		else cur = (cur + 1) % waypoints.Length;
+		else {
+			cur = cur + 1;
+		}
+
 	}
 }
