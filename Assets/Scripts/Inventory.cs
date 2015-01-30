@@ -1,0 +1,50 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class Inventory : MonoBehaviour {
+	public int SlotX, SlotY;
+	public GUISkin skin;
+	public List<Item> inventory = new List<Item>();
+	public List<Item> slots = new List<Item> ();
+	private ItemDatabase database;
+	private bool showInventory = false;
+	// Use this for initialization
+	void Start () 
+	{
+		for (int i = 0; i < (SlotX * SlotY); i++) 
+		{
+			slots.Add(new Item());		
+		}
+		database = GameObject.FindGameObjectWithTag("Item Database").GetComponent<ItemDatabase>(); //Gets items from gameobjects with a specific tag
+		inventory.Add(database.items[0]);
+	}
+
+	void Update()
+	{
+		//key bindings to i
+		if(Input.GetButtonDown("Inventory"))
+		{
+			showInventory = !showInventory;
+		}
+	}
+
+	void OnGUI() 
+	{
+		GUI.skin = skin;
+		if(showInventory) 
+		{
+			DrawIventory();
+		}
+	}
+
+	void DrawIventory()
+	{
+			for (int x = 0; x < SlotX; x++) {
+				for(int y = 0; y < SlotY; y++)
+				{
+					GUI.Box (new Rect(x*55, y*55, 50, 50), "", skin.GetStyle("slot"));
+				}
+			}
+	}
+}
