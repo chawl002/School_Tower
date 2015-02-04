@@ -21,7 +21,9 @@ public class Inventory : MonoBehaviour {
 		//Gets items from gameobjects with a specific tag
 		database = GameObject.FindGameObjectWithTag("Item Database").GetComponent<ItemDatabase>(); 
 		//puts a single item to the inventory slots 
-		inventory[0] = database.items[0];
+		//inventory[0] = database.items[0];
+		AddItem (0);
+		AddItem (1);
 	}
 
 	void Update()
@@ -60,4 +62,24 @@ public class Inventory : MonoBehaviour {
 			}
 		}
 	}
+
+	void AddItem(int id)
+	{
+		for (int i = 0; i < inventory.Count; i++) 
+		{
+			if(inventory[i].ItemName == null)
+			{
+				for(int j = 0; j < database.items.Count; j++)
+				{
+					if(database.items[j].ItemID == id)
+					{
+						inventory[i] = database.items[j];
+					}
+				}
+				break;
+			}
+
+		}
+	}
+
 }
