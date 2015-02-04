@@ -12,7 +12,7 @@ public class KeepTop : MonoBehaviour {
 		camx = Camera.main.transform.position.x;
 		camy = Camera.main.transform.position.y;
 		transform.Translate(camx-transform.position.x, camy-transform.position.y, 0); // Camera.main.transform);
-		transform.Translate(-15, 6, 0);//Camera.main.transform);
+		transform.Translate(15, 6, 0);//Camera.main.transform);
 
 	}
 	
@@ -23,7 +23,7 @@ public class KeepTop : MonoBehaviour {
 			camx = Camera.main.transform.position.x;
 			camy = Camera.main.transform.position.y;
 			transform.Translate (camx-transform.position.x, camy-transform.position.y, 0); // Camera.main.transform);
-			transform.Translate (-15, 6, 0);// Camera.main.transform);
+			transform.Translate (15, 6, 0);// Camera.main.transform);
 						
 
 				}

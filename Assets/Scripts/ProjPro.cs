@@ -10,9 +10,10 @@ public class ProjPro : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		money = GameObject.Find ("money");
-		if (money.GetComponent<MoneyHandle> ().mon < 15)
+		if (money.GetComponent<MoneyHandle> ().mon - 15 < 0)
 			Destroy (gameObject);
-		money.GetComponent<MoneyHandle>().mon -= 15;
+		else
+			money.GetComponent<MoneyHandle>().mon -= 15;
 	}
 	
 	// Update is called once per frame

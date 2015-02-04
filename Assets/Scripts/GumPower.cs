@@ -11,9 +11,10 @@ public class GumPower : MonoBehaviour {
 	void Start () {
 		//transform.Translate (0f, -1f, 0f);
 		money = GameObject.Find ("money");
-		if (money.GetComponent<MoneyHandle> ().mon < 25)
+		if (money.GetComponent<MoneyHandle> ().mon - 25 < 0)
 						Destroy (gameObject);
-		money.GetComponent<MoneyHandle>().mon -= 25;
+		else
+			money.GetComponent<MoneyHandle>().mon -= 25;
 	}
 
 	// Update is called once per frame

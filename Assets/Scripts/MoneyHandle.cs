@@ -16,8 +16,8 @@ public class MoneyHandle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		temp += Time.deltaTime;
-		if ((temp-mtemp)%5 > 0) { //$1 given every 5 seconds
-						mtemp += 5;
+		if ((temp-mtemp)%8 > 0) { //$1 given every 5 seconds
+						mtemp += 8;
 						mon += 100;
 				}
 
