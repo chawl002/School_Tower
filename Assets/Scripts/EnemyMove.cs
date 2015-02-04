@@ -4,8 +4,9 @@ using System.Collections;
 public class EnemyMove : MonoBehaviour {
 	public Transform[] waypoints;
 	int cur = 0;
+	float temp = 0;
 	
-	public float speed = 0.3f;
+	public float speed = 0.015f;
 	
 	void FixedUpdate () {
 		// Waypoint not reached yet? then move closer
@@ -24,5 +25,27 @@ public class EnemyMove : MonoBehaviour {
 			cur = cur + 1;
 		}
 
+		if (speed == 0) {
+
+			temp += Time.deltaTime;
+
+			if(temp >= 2.2)
+			{
+				speed = 0.015f;
+				temp = 0;
+			}
+		}
+
 	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		//Respond to gum
+		if (other.name == "GUM" || other.name == "GUM(Clone)") {
+			Destroy (other.gameObject);
+			speed = 0f;
+		}
+		
+	}
+
 }

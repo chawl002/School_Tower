@@ -84,7 +84,7 @@ MonoBehaviour:
   enemy: {fileID: 137078, guid: 55747265ba25b614e90df9908f2ffa94, type: 2}
   Range: 2
   bulletSpeed: .5
-  bullet: {fileID: 0}
+  bullet: {fileID: 171200, guid: 0956830f4ffdb4413abf3cef1db4496b, type: 2}
   towerCooldown: 2
 --- !u!1001 &100100000
 Prefab:
