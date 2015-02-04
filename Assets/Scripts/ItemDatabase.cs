@@ -6,6 +6,6 @@ public class ItemDatabase : MonoBehaviour {
 
 	void Start()
 	{
-		items.Add (new Item ("Bubble Gum", 0, "Slows down enemies when they step on this.", 0, 0, 10, Item.ItemType.Stat));
+		items.Add (new Item ("BubbleGum", 0, "Slows down enemies when they step on this.", 0, 0, 10, Item.ItemType.Stat));
 	}
 }
