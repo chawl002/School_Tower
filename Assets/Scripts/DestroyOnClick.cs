@@ -14,15 +14,8 @@ public class DestroyOnClick : MonoBehaviour {
 	}
 
 	void OnMouseOver() {
-
-		Debug.Log ("YOU");
-
-		if (Input.GetMouseButtonDown (0)) {
-
+		//If unit is clicked, destroy it
+		if (Input.GetMouseButtonDown (0))
 			Destroy(gameObject);
-
-				}
-
-	
 	}
 }
