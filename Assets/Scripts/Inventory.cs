@@ -44,6 +44,7 @@ public class Inventory : MonoBehaviour {
 		}
 	}
 
+	//draws items in slots that exist in the slots/inventory lists, otherwise, draws an empty box for future items
 	void DrawIventory()
 	{
 		int i = 0;
@@ -63,6 +64,7 @@ public class Inventory : MonoBehaviour {
 		}
 	}
 
+	//Adds an item owned by the player to the inventory list.
 	void AddItem(int id)
 	{
 		for (int i = 0; i < inventory.Count; i++) 
