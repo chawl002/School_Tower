@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SpawnEnemy : MonoBehaviour {
 	// spawn a new teddy each ... seconds
 	public float interval = 3.0f;
 	float timeLeft = 0.0f;
+
 	
 	// gameobject to be spawned
 	public GameObject enemy = null;
@@ -21,4 +23,5 @@ public class SpawnEnemy : MonoBehaviour {
 			timeLeft = interval;
 		}
 	}
+
 }

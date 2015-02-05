@@ -79,7 +79,8 @@ MonoBehaviour:
   - {fileID: 434144, guid: 6ee1862cba42c904d95eabb72a3a56b4, type: 2}
   - {fileID: 434142, guid: 6ee1862cba42c904d95eabb72a3a56b4, type: 2}
   - {fileID: 434130, guid: 6ee1862cba42c904d95eabb72a3a56b4, type: 2}
-  speed: 0
+  gameOver: {fileID: 0}
+  speed: 2
 --- !u!114 &11471200
 MonoBehaviour:
   m_ObjectHideFlags: 1

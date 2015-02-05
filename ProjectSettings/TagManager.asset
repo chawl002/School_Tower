@@ -3,6 +3,8 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - GameOver
+  - 
   - Item Database
   - 
   Builtin Layer 0: Default

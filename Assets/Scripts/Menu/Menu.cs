@@ -7,16 +7,15 @@ public class Menu : MonoBehaviour {
 	
 	public float widthPercent = 0.3f;
 	public float heightPercent = 0.3f;
-	public float movex = 350f;
-	public float movey = 150f;
+
 
 	void OnGUI() {
 		if (!btnTexture) {
 			Debug.LogError("Please assign a texture on the inspector");
 			return;
 		}
-		Rect r = new Rect(movex,
-		                  movey,
+		Rect r = new Rect(350f,
+		                  180f,
 		                  Screen.width * widthPercent,
 		                  Screen.height * heightPercent); 
 

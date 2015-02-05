@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Menu/OpeningTitle.unity
+    path: Assets/Scene/OpeningTitle.unity
   - enabled: 1
-    path: Assets/Menu/GameSelection.unity
+    path: Assets/Scene/GameSelection.unity
+  - enabled: 1
+    path: Assets/Scene/ElementaryLevelOne.unity
+  - enabled: 1
+    path: Assets/Scene/GameOver.unity

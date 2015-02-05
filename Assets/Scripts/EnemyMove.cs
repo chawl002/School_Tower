@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class EnemyMove : MonoBehaviour {
 	public Transform[] waypoints;
+
 	int cur = 0;
 	float temp = 0;
 	
 	public float speed = 0.015f;
-	
+
+
+
 	void FixedUpdate () {
 		//fix spinning on enemies
 		if (transform.rotation.z != 0)
@@ -22,6 +26,7 @@ public class EnemyMove : MonoBehaviour {
 		// Last Waypoint reached, destroy enemy
 		else if (cur == waypoints.Length - 1) {
 			Destroy(this.gameObject);
+
 		}
 		// Waypoint reached, select next one
 		else {
