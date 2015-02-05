@@ -137,8 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13289e460b86e40968b765d6351b977a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnMenu: {fileID: 2800000, guid: 9d08cc018a44645d8b27ed55781f617c, type: 3}
-  btnLevel: {fileID: 2800000, guid: 500cd16a8e7ef4911abb3317def28a04, type: 3}
+  btnMenu: {fileID: 2800000, guid: c7158c85ca3d1492385df97d848d8456, type: 3}
+  btnLevel: {fileID: 2800000, guid: 72ede77ef0b254cb7b4f44180e2e81b6, type: 3}
   widthPercent: .150000006
   heightPercent: .150000006
 --- !u!1001 &364492971

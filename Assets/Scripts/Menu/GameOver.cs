@@ -18,12 +18,12 @@ public class GameOver : MonoBehaviour {
 			Debug.LogError("Please assign a texture on the inspector");
 			return;
 		}
-		Rect r = new Rect(220f,
-		                  150f,
+		Rect r = new Rect(267f,
+		                  300f,
 		                  Screen.width * widthPercent,
 		                  Screen.height * heightPercent); 
-		Rect r2 = new Rect(500f,
-		                   225f,
+		Rect r2 = new Rect(480f,
+		                   300f,
 		                   Screen.width * widthPercent,
 		                   Screen.height * heightPercent); 
 		

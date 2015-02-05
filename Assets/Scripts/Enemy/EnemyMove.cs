@@ -26,6 +26,7 @@ public class EnemyMove : MonoBehaviour {
 		// Last Waypoint reached, destroy enemy
 		else if (cur == waypoints.Length - 1) {
 			Destroy(this.gameObject);
+			Application.LoadLevel(3);
 
 		}
 		// Waypoint reached, select next one
