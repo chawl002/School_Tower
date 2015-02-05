@@ -27,4 +27,11 @@ public class GumPower : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
+
+	/*void OnCollisionEnter2D(Collision2D coll)
+	{
+		//MAKE HIM CONTINUE TO THROW GUM
+		GetComponentInParent<ThrowGum> ().throwg = true;
+			//Physics2D.IgnoreCollision (coll.gameObject.collider2D, collider2D);
+	}*/
 }

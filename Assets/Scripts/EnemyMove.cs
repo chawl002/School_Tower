@@ -50,6 +50,7 @@ public class EnemyMove : MonoBehaviour {
 	{
 		//Respond to gum
 		if (other.name == "GUM" || other.name == "GUM(Clone)") {
+
 			Destroy (other.gameObject);
 			speed = 0f;
 		}

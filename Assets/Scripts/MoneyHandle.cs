@@ -10,14 +10,14 @@ public class MoneyHandle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		mon = 100;
+		mon = 150;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		temp += Time.deltaTime;
 		if ((temp-mtemp)%8 > 0) { //$1 given every 5 seconds
-						mtemp += 8;
+						mtemp += 6;
 						mon += 100;
 				}
 
@@ -27,6 +27,9 @@ public class MoneyHandle : MonoBehaviour {
 
 	void OnGUI()
 	{
-		GUI.Label (new Rect (-50, 0, Screen.width, Screen.height), "$ " + (mon/100).ToString() + " . " + (mon%100).ToString(), guicust);
+		string extraZ = "";
+		if (mon % 100 < 10)
+						extraZ = "0";
+		GUI.Label (new Rect (-50, 0, Screen.width, Screen.height), "$ " + (mon/100).ToString() + "." + extraZ + (mon%100).ToString(), guicust);
 	}
 }
