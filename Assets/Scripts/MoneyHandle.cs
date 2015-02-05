@@ -27,6 +27,6 @@ public class MoneyHandle : MonoBehaviour {
 
 	void OnGUI()
 	{
-		GUI.Label (new Rect (50, 50, Screen.width, Screen.height), "$ " + (mon/100).ToString() + " . " + (mon%100).ToString(), guicust);
+		GUI.Label (new Rect (-50, 0, Screen.width, Screen.height), "$ " + (mon/100).ToString() + " . " + (mon%100).ToString(), guicust);
 	}
 }

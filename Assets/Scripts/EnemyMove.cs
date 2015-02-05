@@ -9,6 +9,9 @@ public class EnemyMove : MonoBehaviour {
 	public float speed = 0.015f;
 	
 	void FixedUpdate () {
+		//fix spinning on enemies
+		if (transform.rotation.z != 0)
+						transform.rotation = Quaternion.identity;
 		// Waypoint not reached yet? then move closer
 		if (transform.position != waypoints [cur].position) {
 			Vector2 p = Vector2.MoveTowards (transform.position,
