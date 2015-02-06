@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameOver : MonoBehaviour {
 	
-	public Texture btnMenu;
+	/*public Texture btnMenu;
 	public Texture btnLevel;
 	
 	public float widthPercent = 0.22f;
@@ -35,5 +35,11 @@ public class GameOver : MonoBehaviour {
 			Debug.Log("Clicked the button with an image");
 			Application.LoadLevel(1);
 		}
+	}*/
+	public void BackToMenu(){
+		Application.LoadLevel(0);
+	}
+	public void GameSelect(){
+		Application.LoadLevel(1);
 	}
 }

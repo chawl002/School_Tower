@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LevelSelect : MonoBehaviour {
 
-	public Texture btnEle;
+	/*public Texture btnEle;
 	public Texture btnBack;
 	
 	public float widthPercent = 0.15f;
@@ -32,5 +32,11 @@ public class LevelSelect : MonoBehaviour {
 			Debug.Log("Clicked the button with an image");
 			Application.LoadLevel("OpeningTitle");
 		}
+	}*/
+	public void GoBack(){
+		Application.LoadLevel(0);
+	}
+	public void GameStart(){
+		Application.LoadLevel(2);
 	}
 }
