@@ -6,14 +6,18 @@ public class ProjPro : MonoBehaviour {
 	public float temp = 0;
 	//public GameObject proj;
 	public GameObject money;
+	public int cost = 15;
 
 	// Use this for initialization
 	void Start () {
 		money = GameObject.Find ("money");
-		if (money.GetComponent<MoneyHandle> ().mon - 15 < 0)
+		if (money.GetComponent<MoneyHandle> ().mon - cost < 0)
+		{
+			money.GetComponent<MoneyHandle> ().mon = 0;
 			Destroy (gameObject);
+		}
 		else
-			money.GetComponent<MoneyHandle>().mon -= 15;
+			money.GetComponent<MoneyHandle>().mon -= cost;
 	}
 	
 	// Update is called once per frame

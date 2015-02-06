@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour {
 	public float temp = 0;
 	public GameObject proj;
 
+
 	// Use this for initialization
 	void Start () {
 
