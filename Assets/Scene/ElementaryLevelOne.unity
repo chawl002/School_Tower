@@ -369,6 +369,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mon: 0
+  timerf: 0
+  timers: 0
+  timerm: 0
+  victory: 0
   temp: 0
   mtemp: 0
   guicust:
@@ -1017,6 +1021,7 @@ GameObject:
   - 61: {fileID: 1572255705}
   - 61: {fileID: 1572255704}
   - 61: {fileID: 1572255703}
+  - 114: {fileID: 1572255713}
   m_Layer: 0
   m_Name: MapWithPaths
   m_TagString: Untagged
@@ -1190,6 +1195,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .291887879, y: .970940351}
   m_Center: {x: .85405606, y: 1.01452839}
+--- !u!114 &1572255713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572255698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 009dee7a8f71c40849c24ebb8d586143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1634748033
 GameObject:
   m_ObjectHideFlags: 0

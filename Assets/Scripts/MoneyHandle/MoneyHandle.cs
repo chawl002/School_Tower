@@ -31,8 +31,6 @@ public class MoneyHandle : MonoBehaviour {
 						timerm += 1;
 				}
 
-		Debug.Log (timers);
-
 		temp += Time.deltaTime;
 		if ((temp-mtemp)%8 > 0) { //$1 given every 5 seconds
 						mtemp += 6;
