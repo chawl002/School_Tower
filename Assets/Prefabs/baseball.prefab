@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11451466}
   m_Layer: 0
   m_Name: baseball
-  m_TagString: Untagged
+  m_TagString: attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.66240025, y: -.553555727, z: 0}
+  m_LocalPosition: {x: -8.66240025, y: -.553555727, z: -.00999999978}
   m_LocalScale: {x: .0500000007, y: .0500000007, z: .100000001}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38,7 +38,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 151466}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Radius: 7.50000048
   m_Center: {x: 0, y: 0}
 --- !u!114 &11451466

@@ -59,6 +59,7 @@ public class EnemyMove : MonoBehaviour {
 			Destroy (other.gameObject);
 			speed = 0f;
 		}
+
 		
 	}
 

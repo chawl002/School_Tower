@@ -20,16 +20,16 @@ public class EnemyHP : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.name == "Sword" || other.name == "Sword(Clone)") {
+		if (other.tag == "attack") {
 			HP = HP - 1;
-			Destroy (other.gameObject);
+			if(other.name == "Sword(Clone)")
+				Destroy (other.gameObject);
 		}
 
 		if (other.name == "LINK2(Clone)" || other.name == "droppedmoney(Clone)") {
 						Debug.Log ("WHAT");
 						Physics2D.IgnoreCollision (collider2D, other.collider2D);
 				}
-
 	}
 
 	void OnCollisionStay2D(Collision2D coll)
