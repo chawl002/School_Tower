@@ -6,8 +6,8 @@ public class GameOver : MonoBehaviour {
 	public Texture btnMenu;
 	public Texture btnLevel;
 	
-	public float widthPercent = 0.25f;
-	public float heightPercent = 0.25f;
+	public float widthPercent = 0.22f;
+	public float heightPercent = 0.22f;
 	
 	void OnGUI() {
 		if (!btnMenu) {
