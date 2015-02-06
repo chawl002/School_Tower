@@ -253,7 +253,7 @@ Transform:
   m_PrefabInternal: {fileID: 1340866856}
   m_GameObject: {fileID: 364027007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.82000017, y: -3.31999993, z: -.200000003}
+  m_LocalPosition: {x: -20.1399994, y: -3.31999993, z: -.200000003}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -648,7 +648,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1135569911}
-  m_HideIfInvisible: 0
 --- !u!23 &1135569916
 Renderer:
   m_ObjectHideFlags: 0
@@ -718,7 +717,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 496904, guid: e5566ffead6b244abb1e174c07faf01c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.82000017
+      value: -20.1399994
       objectReference: {fileID: 0}
     - target: {fileID: 496904, guid: e5566ffead6b244abb1e174c07faf01c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1259,6 +1258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
+  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0
@@ -1385,7 +1385,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -1405,6 +1404,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!224 &1988532619
