@@ -13,6 +13,7 @@ public class EnemyMove : MonoBehaviour {
 
 
 	void FixedUpdate () {
+
 		//fix spinning on enemies
 		if (transform.rotation.z != 0)
 						transform.rotation = Quaternion.identity;

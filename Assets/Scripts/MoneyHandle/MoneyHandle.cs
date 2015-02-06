@@ -21,6 +21,9 @@ public class MoneyHandle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if(mon <= 0)
+			Application.LoadLevel(3);
+
 		timerf += Time.deltaTime;
 
 		timers = (int)(timerf - (timerf % 1));
@@ -38,7 +41,7 @@ public class MoneyHandle : MonoBehaviour {
 				}
 
 		if (timerm >= 3)
-						victory = true;
+			Application.LoadLevel("GameSelection");
 
 	}
 
