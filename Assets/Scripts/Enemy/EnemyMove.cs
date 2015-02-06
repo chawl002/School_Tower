@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class EnemyMove : MonoBehaviour {
 	public Transform[] waypoints;
-
+	public GameObject healthBar;
 	int cur = 0;
 	float temp = 0;
 	
@@ -25,9 +25,12 @@ public class EnemyMove : MonoBehaviour {
 		} 
 		// Last Waypoint reached, destroy enemy
 		else if (cur == waypoints.Length - 1) {
+			healthBar = GameObject.Find("HealthBar");
+			healthBar.GetComponent<Image>().fillAmount -= 0.25f;
 			Destroy(this.gameObject);
-			Application.LoadLevel(3);
-
+			if(healthBar.GetComponent<Image>().fillAmount == 0){
+				Application.LoadLevel(3);
+			}
 		}
 		// Waypoint reached, select next one
 		else {
