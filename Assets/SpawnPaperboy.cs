@@ -5,6 +5,7 @@ public class SpawnPaperboy : MonoBehaviour {
 
 	bool fclick = false;
 	bool sclick = false;
+	float temp = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +14,15 @@ public class SpawnPaperboy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (fclick == true) {
+			temp += Time.deltaTime;
+			if(temp >= 1)
+			{
+				temp = 0;
+				fclick = false;
+				sclick = false;
+			}
+		}
 	
 	}
 
