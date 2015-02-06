@@ -12,13 +12,13 @@ public class Item {
 	public int ItemSpeed; //speed of the item movement
 	public double SpeedDecrease; //if it hits an enemy, the enemy will slow down
 	public ItemType itemtype; //determines the type of item
-	
+	public int itemCost;
 	public enum ItemType{
 		Weapon,
 		Stat
 	}
 
-	public Item(string name, int id, string des, int damage, int speed, double speeddecrease, ItemType type)
+	public Item(string name, int id, string des, int damage, int speed, double speeddecrease, ItemType type, int cost)
 	{
 		ItemName = name;
 		ItemID = id;
@@ -28,7 +28,7 @@ public class Item {
 		ItemSpeed = speed;
 		SpeedDecrease = speeddecrease;
 		itemtype = type;
-
+		itemCost = cost;
 	}
 	public Item(){}
 }

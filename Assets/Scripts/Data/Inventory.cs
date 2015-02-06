@@ -49,7 +49,7 @@ public class Inventory : MonoBehaviour {
 		}
 		if (showToolTip && showInventory)
 		{
-			GUI.Box (new Rect(Event.current.mousePosition.x, Event.current.mousePosition.y, 200, 200), tooltip);
+			GUI.Box (new Rect(Event.current.mousePosition.x, Event.current.mousePosition.y, 200, 100), tooltip);
 		}
 	}
 
@@ -86,7 +86,7 @@ public class Inventory : MonoBehaviour {
 	//Creation of the info in the hoverable info box
 	string CreateToolTip(Item item)
 	{
-		tooltip = item.ItemName;
+		tooltip = item.ItemName + "\n\n" + item.ItemDesc + "\n\nCosts " + item.itemCost + " cents";
 		return tooltip;
 	}
 
