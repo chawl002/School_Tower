@@ -43,7 +43,7 @@ public class Tower_shoot_AI : MonoBehaviour {
 				bullet.transform.position = Vector2.MoveTowards(bullet.transform.position,tmp,bulletSpeed *Time.deltaTime);
 				if (bullet.transform.position.x == tmp.x && bullet.transform.position.y == tmp.y)
 				{
-					Destroy (nearstEnemy);	
+					//Destroy (nearstEnemy);	
 					Destroy (bullet);
 					break;
 				}
