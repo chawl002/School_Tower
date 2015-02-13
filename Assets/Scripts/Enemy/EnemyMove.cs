@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class EnemyMove : MonoBehaviour {
 	public Transform[] waypoints;
 	public GameObject healthBar;
-	int cur = 0;
+	public int cur = 0;
 	float temp = 0;
 	
 	public float speed = 0.015f;
@@ -59,8 +59,7 @@ public class EnemyMove : MonoBehaviour {
 			Destroy (other.gameObject);
 			speed = 0f;
 		}
-
-		
+	
 	}
 
 }
