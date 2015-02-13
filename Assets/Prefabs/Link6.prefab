@@ -13,9 +13,10 @@ GameObject:
   - 114: {fileID: 11405962}
   - 50: {fileID: 5005962}
   - 58: {fileID: 5805962}
+  - 114: {fileID: 11400150}
   m_Layer: 0
   m_Name: Link6
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,6 +59,17 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .300000012
   m_Center: {x: 0, y: 0}
+--- !u!114 &11400150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275e4f9f5e3a94713a406d48b1b38a2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11405960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,6 +92,7 @@ MonoBehaviour:
   - {fileID: 434142, guid: 6ee1862cba42c904d95eabb72a3a56b4, type: 2}
   - {fileID: 434130, guid: 6ee1862cba42c904d95eabb72a3a56b4, type: 2}
   healthBar: {fileID: 0}
+  cur: 0
   speed: .0149999997
 --- !u!114 &11405962
 MonoBehaviour:
@@ -92,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e4844fefa62f466aac154f637e0586d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 0
+  HP: 3
 --- !u!212 &21205962
 SpriteRenderer:
   m_ObjectHideFlags: 1

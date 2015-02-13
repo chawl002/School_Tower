@@ -2,11 +2,10 @@
 using System.Collections;
 
 public class EnemyHP : MonoBehaviour {
-	public int HP;
+	public int HP = 4;
 
 	// Use this for initializ
 	void Start () {
-		HP = 4;
 	}
 	
 	// Update is called once per frame
@@ -21,12 +20,14 @@ public class EnemyHP : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "attack") {
-			HP = HP - 1;
-			if(other.name == "Sword(Clone)")
+			if(other.name != "GUM(Clone)")
+				HP = HP - 1;
+			if(other.name != "baseball(Clone)")
 				Destroy (other.gameObject);
 		}
 
-		if (other.name == "LINK2(Clone)" || other.name == "droppedmoney(Clone)") {
+		//if (other.name == "LINK2(Clone)" || other.name == "droppedmoney(Clone)") 
+		else {
 						Debug.Log ("WHAT");
 						Physics2D.IgnoreCollision (collider2D, other.collider2D);
 				}

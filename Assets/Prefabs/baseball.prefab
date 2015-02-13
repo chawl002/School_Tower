@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   temp: 0
   money: {fileID: 0}
-  cost: 30
+  cost: 40
 --- !u!212 &21251466
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -26,6 +26,7 @@ public class Inventory : MonoBehaviour {
 		//inventory[0] = database.items[0];
 		AddItem (0);
 		AddItem (1);
+		AddItem (2);
 	}
 
 	//makes the inventory appear and disappear when the button i is pressed
