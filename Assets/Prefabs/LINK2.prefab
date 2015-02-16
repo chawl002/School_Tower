@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11471200}
   - 50: {fileID: 5071200}
   - 58: {fileID: 5830756}
+  - 114: {fileID: 11435568}
   m_Layer: 0
   m_Name: LINK2
   m_TagString: Untagged
@@ -58,6 +59,21 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .25
   m_Center: {x: 0, y: 0}
+--- !u!114 &11435568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0a98d7157136c4688f4bb79fb00333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos: {x: 0, y: 0, z: 0}
+  xOffset: -.75
+  yOffset: 1
+  aTexture: {fileID: 2800000, guid: ecee8e38048162d4b848bb286c7332c9, type: 3}
 --- !u!114 &11471198
 MonoBehaviour:
   m_ObjectHideFlags: 1
