@@ -166,10 +166,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 997749111}
-  - 114: {fileID: 997749109}
   - 222: {fileID: 997749112}
   - 114: {fileID: 997749110}
   - 114: {fileID: 997749113}
+  - 114: {fileID: 997749109}
   m_Layer: 5
   m_Name: LevelSelct
   m_TagString: Untagged
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 997749108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13289e460b86e40968b765d6351b977a, type: 3}
+  m_Script: {fileID: 11500000, guid: a77fefe31e14ca84689512f73b6fdc9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &997749110
@@ -228,7 +228,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 997749109}
-        m_MethodName: GameSelect
+        m_MethodName: GoPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -265,6 +265,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 997749108}
+  m_HideIfInvisible: 0
 --- !u!114 &997749113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,6 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -352,7 +354,6 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!1 &1276738095
@@ -415,7 +416,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 5
 --- !u!4 &1276738099
 Transform:
   m_ObjectHideFlags: 0
@@ -494,6 +494,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1656613729}
+  m_HideIfInvisible: 0
 --- !u!1 &1782727349
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,3 +556,4 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1782727349}
+  m_HideIfInvisible: 0

@@ -8,7 +8,7 @@ public class Tower_shoot_AI : MonoBehaviour {
 	public float Range;
 	public float bulletSpeed;
 	public GameObject bullet;
-	private int flag = 0;
+	private int flag ;
 	public int towerCooldown;
 	private GameObject[] enemies = null;
 	private int cooldownCounter = 0;
@@ -30,12 +30,13 @@ public class Tower_shoot_AI : MonoBehaviour {
 		if (Vector2.Distance (transform.position, nearstEnemy.transform.position) <= Range && flag == 0) {
 
 			//spawn a bullet
-			Vector2 spawnPosition = this.transform.position;
+			//Vector2 spawnPosition = this.transform.position;
 
-			Instantiate (bullet,spawnPosition,Quaternion.identity);
+			//Instantiate (bullet,spawnPosition,Quaternion.identity);
+			GameObject.Instantiate(bullet, this.transform.position, transform.rotation);
 
 			//get enemy position
-			Vector2 tmp = enemy.transform.position;
+			Vector2 tmp = nearstEnemy.transform.position;
 			//float step = bulletSpeed *Time.deltaTime;
 
 			//bullet shoot to the enemy

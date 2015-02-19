@@ -33,4 +33,5 @@ public class Projectile : MonoBehaviour {
 		//if (Input.GetKeyDown ("x"))
 		//				break;
 	}
+	
 }

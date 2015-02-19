@@ -50,12 +50,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 184110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55e62625d6c294a1ab718e28f2811d0a, type: 3}
+  m_Script: {fileID: 11500000, guid: e7d5f3d49a04a4f5496ab3ee6a92a85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   temp: 0
-  money: {fileID: 0}
-  cost: 15
+  money: {fileID: 196904, guid: e5566ffead6b244abb1e174c07faf01c, type: 2}
+  enemies: []
 --- !u!114 &11473160
 MonoBehaviour:
   m_ObjectHideFlags: 1
