@@ -5,8 +5,13 @@ using UnityEngine.UI;
 public class SpawnEnemy : MonoBehaviour {
 	// spawn a new teddy each ... seconds
 	public float interval = 3.0f;
+	public float decreaseInterval = 3.0f;
+	private float decreaseIntervalTmp;
 	float timeLeft = 0.0f;
 
+	void Start() {
+		decreaseIntervalTmp = decreaseInterval;
+	}
 	
 	// gameobject to be spawned
 
@@ -31,6 +36,13 @@ public class SpawnEnemy : MonoBehaviour {
 			
 			// reset time
 			timeLeft = interval;
+			decreaseIntervalTmp -= 1.0f;
+			if(decreaseIntervalTmp <= 0f){
+				if(interval > 1.0f){
+					interval -= 1.0f;
+				}
+				decreaseIntervalTmp = decreaseInterval;
+			}
 		}
 	}
 
