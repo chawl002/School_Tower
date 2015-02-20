@@ -12,14 +12,22 @@ public class MoneyHandle : MonoBehaviour {
 	public float temp = 0;
 	public int mtemp = 0;
 	public GUIStyle guicust;
+	public GameObject muse;
 
 	// Use this for initialization
 	void Start () {
+		muse = GameObject.Find("Musical");
 		mon = 150;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (mon <= 100)
+			muse.GetComponent<AudioSource> ().pitch = 1.5f;
+		else
+			muse.GetComponent<AudioSource> ().pitch = 1f;
+
 
 		if(mon <= 0)
 			Application.LoadLevel(3);
