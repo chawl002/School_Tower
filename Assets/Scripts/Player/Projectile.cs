@@ -4,11 +4,13 @@ using System.Collections;
 public class Projectile : MonoBehaviour {
 
 	public float temp = 0;
+	public GameObject our;
 	public GameObject proj;
 
 
 	// Use this for initialization
 	void Start () {
+
 
 	}
 	
@@ -22,7 +24,8 @@ public class Projectile : MonoBehaviour {
 			Vector3 pos = transform.position;
 
 
-			GameObject.Instantiate(proj, pos, transform.rotation); //Instantiate(tragedy);
+			/*GameObject shot = */GameObject.Instantiate(proj, pos, transform.rotation); //Instantiate(tragedy);
+			//shot.GetComponent<IndexInList>().INDEX = 
 			//DestroyObject(this);
 			//if(transform.root.gameObject){
 			//	Destroy(transform.root.gameObject);
