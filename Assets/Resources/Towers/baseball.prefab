@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11483082}
   - 114: {fileID: 11483084}
   - 114: {fileID: 11483086}
+  - 61: {fileID: 6187398}
   m_Layer: 0
   m_Name: baseball
   m_TagString: tower
@@ -31,6 +32,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6187398
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183086}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11483082
 MonoBehaviour:
   m_ObjectHideFlags: 1
