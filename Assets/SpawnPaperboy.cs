@@ -14,14 +14,17 @@ public class SpawnPaperboy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Inv = GameObject.Find("Inventory");
+		Id = GameObject.Find("Item Database");
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Inv = GameObject.Find("Intentory");
-		Id = GameObject.Find("Item Database");
-		ItemIndex = Inv.GetComponent<Inventory> ().SPAWNTOWER;
+		//Inv = GameObject.Find("Intentory");
+		//Id = GameObject.Find("Item Database");
+		if(Inv.GetComponent<Inventory> ().click)
+			ItemIndex = Inv.GetComponent<Inventory> ().SPAWNTOWER;
 
 		if (fclick == true) {
 			temp += Time.deltaTime;
@@ -32,11 +35,17 @@ public class SpawnPaperboy : MonoBehaviour {
 				sclick = false;
 			}
 		}
+
+		//if (ItemIndex != -1)
+		//				Debug.Log (ItemIndex);
 	
 	}
 
 	void OnMouseOver() {
 		//If unit is clicked, destroy it
+
+
+
 
 		if (ItemIndex != -1) {
 		

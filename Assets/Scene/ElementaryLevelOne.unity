@@ -632,7 +632,7 @@ GameObject:
   - 4: {fileID: 1455665421}
   - 114: {fileID: 1455665420}
   m_Layer: 0
-  m_Name: Inventor
+  m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -876,6 +876,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poop: 0
+  ItemIndex: 0
+  Inv: {fileID: 0}
+  Id: {fileID: 0}
 --- !u!1 &1634748033
 GameObject:
   m_ObjectHideFlags: 0
