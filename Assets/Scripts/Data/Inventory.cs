@@ -102,7 +102,7 @@ public class Inventory : MonoBehaviour {
 						else
 						{
 							//Highlight blue
-							Texture2D highlight_texture = Resources.Load<Texture2D>(slots[id].ItemName+"_Highlight");
+							Texture2D highlight_texture = Resources.Load<Texture2D>(slots[SPAWNTOWER].ItemName+"_Highlight");
 							GUI.DrawTextureWithTexCoords(spot, highlight_texture, new Rect(0f, 0f, 1f, 1f));
 						}
 						//Poop is a global variable from SpawnPaperBoy that determines if the tower has been placed
