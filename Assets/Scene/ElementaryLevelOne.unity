@@ -319,6 +319,7 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 0
     m_StretchHeight: 0
+  muse: {fileID: 0}
 --- !u!212 &822607252
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -885,7 +886,7 @@ GameObject:
   - 4: {fileID: 1946120747}
   - 82: {fileID: 1946120746}
   m_Layer: 0
-  m_Name: Nintendo_Land_Music_Animal_Crossing_Sweet_Day_(Island_Tour)
+  m_Name: Musical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
