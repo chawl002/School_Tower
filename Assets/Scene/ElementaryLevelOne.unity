@@ -632,7 +632,7 @@ GameObject:
   - 4: {fileID: 1455665421}
   - 114: {fileID: 1455665420}
   m_Layer: 0
-  m_Name: Inventory
+  m_Name: Inventor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
