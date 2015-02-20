@@ -16,10 +16,12 @@ public class Inventory : MonoBehaviour {
 	private Texture2D BUTTONFACE;
 	private Rect spot;
 	private int id = -1;
+	public GameObject mappy;
 
 	// Use this for initialization
 	void Start () 
 	{
+		mappy = GameObject.Find ("MapWithPaths");
 		//puts null box background with no items to show placement
 		for (int i = 0; i < (SlotX * SlotY); i++) 
 		{
@@ -88,9 +90,10 @@ public class Inventory : MonoBehaviour {
 						else{
 						Texture2D highlight_texture = Resources.Load<Texture2D>(slots[id].ItemName+"_Highlight");
 							GUI.DrawTextureWithTexCoords(spot, highlight_texture, new Rect(0f, 0f, 1f, 1f));}
-						if(poop)
+						if(mappy.GetComponent<SpawnPaperboy> ().poop)
 						{
 							click = false;
+							mappy.GetComponent<SpawnPaperboy> ().poop = false;
 						}
 					}
 
