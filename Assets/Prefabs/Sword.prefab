@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6184110}
   - 114: {fileID: 11473160}
   - 114: {fileID: 11441506}
+  - 114: {fileID: 11441830}
   m_Layer: 0
   m_Name: Sword
   m_TagString: attack
@@ -53,8 +54,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55e62625d6c294a1ab718e28f2811d0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shoot_lr: 1
+  shoot_ud: 0
   temp: 0
   money: {fileID: 0}
+--- !u!114 &11441830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bbf4a1b9440f4c3ea1cf32ed1b9555e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  INDEX: 0
 --- !u!114 &11473160
 MonoBehaviour:
   m_ObjectHideFlags: 1
