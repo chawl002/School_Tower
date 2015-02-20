@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour {
 	private bool showInventory = true;
 	private bool showToolTip;
 	private string tooltip;
-	private bool click = false;
+	public bool click = false;
 	private Texture2D BUTTONFACE;
 	private Rect spot;
 	private int id = -1;
@@ -88,6 +88,10 @@ public class Inventory : MonoBehaviour {
 						else{
 						Texture2D highlight_texture = Resources.Load<Texture2D>(slots[id].ItemName+"_Highlight");
 							GUI.DrawTextureWithTexCoords(spot, highlight_texture, new Rect(0f, 0f, 1f, 1f));}
+						if(poop)
+						{
+							click = false;
+						}
 					}
 
 					//if the mouse is hovered over it, display information from createtooltip info
