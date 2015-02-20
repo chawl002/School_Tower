@@ -655,6 +655,8 @@ MonoBehaviour:
   SPAWNTOWER: -1
   inventory: []
   slots: []
+  click: 0
+  mappy: {fileID: 0}
 --- !u!4 &1455665421
 Transform:
   m_ObjectHideFlags: 0
