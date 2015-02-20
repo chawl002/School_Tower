@@ -4,7 +4,7 @@ using System.Collections;
 public class DestroyOnClick : MonoBehaviour {
 		
 	bool fclick = false;
-	bool sclick = false;
+
 	float temp = 0;
 
 	// Use this for initialization
@@ -56,8 +56,8 @@ public class DestroyOnClick : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0) && fclick == false) {
 						fclick = true;
 				} 
-		else if (Input.GetMouseButtonDown (0) && fclick == true) {
-						sclick = true;
+		else if (Input.GetMouseButtonDown(0) && fclick == true) {
+	
 						Destroy(gameObject);
 				}
 	}

@@ -78,6 +78,15 @@ public class Inventory : MonoBehaviour {
 		int i = 0;
 		for (int x = 0; x < SlotX; x++) 
 		{
+			//Poop is a global variable from SpawnPaperBoy that determines if the tower has been placed
+			if(mappy.GetComponent<SpawnPaperboy> ().poop)
+			{
+				//If the tower has been placed, update global variables from the first item click
+				click = false;
+				mappy.GetComponent<SpawnPaperboy> ().poop = false;
+				SPAWNTOWER = -1;
+
+			}
 			for(int y = 0; y < SlotY; y++)
 			{
 				//Rectangle object for slots
@@ -105,14 +114,6 @@ public class Inventory : MonoBehaviour {
 							Texture2D highlight_texture = Resources.Load<Texture2D>(slots[SPAWNTOWER].ItemName+"_Highlight");
 							GUI.DrawTextureWithTexCoords(spot, highlight_texture, new Rect(0f, 0f, 1f, 1f));
 						}
-						//Poop is a global variable from SpawnPaperBoy that determines if the tower has been placed
-						if(mappy.GetComponent<SpawnPaperboy> ().poop)
-						{
-							//If the tower has been placed, update global variables from the first item click
-							click = false;
-							mappy.GetComponent<SpawnPaperboy> ().poop = false;
-							SPAWNTOWER = -1;
-						}
 					}
 
 					//if the mouse is hovered over it, display information from createtooltip info
@@ -123,6 +124,7 @@ public class Inventory : MonoBehaviour {
 						showToolTip = true;
 
 						//If there is a click, change global variables for SpawnPaperBoy to access
+
 						if(Input.GetMouseButtonDown(0))
 						{
 							spot = slotRect; //position of item in inventory
