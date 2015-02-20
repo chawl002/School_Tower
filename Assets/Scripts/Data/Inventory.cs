@@ -3,20 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour {
-	public int SlotX, SlotY;
-	public GUISkin skin;
-	public int SPAWNTOWER = -1;
+	public int SPAWNTOWER = -1; //GLOBAL VARIABLE EQUALS TO ID NUMBER - SEE ITEM.CS FOR MORE INFO
+	public bool click = false; //Did the user click on the item in inventory
+	private Rect spot; //same as slotRect - saves the position of the clicked on item
+	private int id = -1; //Id of the item currently clicked on - returns -1 if no item is clicked yet
+
+	public int SlotX, SlotY; //Size of Inventory or Items you can own. Can change in Inspector
+	public GUISkin skin;//The background of the Inventory slots
+
 	public List<Item> inventory = new List<Item>();
 	public List<Item> slots = new List<Item> ();
 	private ItemDatabase database;
-	private bool showInventory = true;
-	private bool showToolTip;
-	private string tooltip;
-	public bool click = false;
-	private Texture2D BUTTONFACE;
-	private Rect spot;
-	private int id = -1;
-	public GameObject mappy;
+
+	private bool showInventory = true; //Show all the items you own. Press i to hide
+	private bool showToolTip; //Should we show item details?
+	private string tooltip; //The item details output when the mouse hovers the item in inventory
+
+	public GameObject mappy; //Used to get variables fro Spawn Paperboy
 
 	// Use this for initialization
 	void Start () 
@@ -73,7 +76,6 @@ public class Inventory : MonoBehaviour {
 			{
 				//Rectangle object for slots
 				Rect slotRect = new Rect(x*55, y*55, 50, 50);
-				//BUTTONFACE = slots[i].ItemIcon;
 				GUI.Box (slotRect, "", skin.GetStyle("slot"));
 				slots[i] = inventory[i];
 				if(slots[i].ItemName != null)
@@ -94,6 +96,8 @@ public class Inventory : MonoBehaviour {
 						{
 							click = false;
 							mappy.GetComponent<SpawnPaperboy> ().poop = false;
+							SPAWNTOWER = -1;
+							id = -1;
 						}
 					}
 
