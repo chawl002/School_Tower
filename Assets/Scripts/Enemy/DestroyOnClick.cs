@@ -56,7 +56,7 @@ public class DestroyOnClick : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0) && fclick == false) {
 						fclick = true;
 				} 
-		else if (Input.GetMouseButtonDown (0) && fclick == true) {
+		else if (Input.GetMouseButtonDown (1) && fclick == true) {
 						sclick = true;
 						Destroy(gameObject);
 				}

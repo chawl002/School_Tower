@@ -2,11 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 
+//SOME OF THIS CODE IS FROM AWFUL MEDIA YOUTUBE TUTORIALS
+
 public class Inventory : MonoBehaviour {
 	public int SPAWNTOWER = -1; //GLOBAL VARIABLE EQUALS TO ID NUMBER - SEE ITEM.CS FOR MORE INFO
 	public bool click = false; //Did the user click on the item in inventory
 	private Rect spot; //same as slotRect - saves the position of the clicked on item
-	private int id = -1; //Id of the item currently clicked on - returns -1 if no item is clicked yet
 
 	public int SlotX, SlotY; //Size of Inventory or Items you can own. Can change in Inspector
 	public GUISkin skin;//The background of the Inventory slots
@@ -25,16 +26,17 @@ public class Inventory : MonoBehaviour {
 	void Start () 
 	{
 		mappy = GameObject.Find ("MapWithPaths");
-		//puts null box background with no items to show placement
+		//puts null box background with no items to show placement and how much you can own
 		for (int i = 0; i < (SlotX * SlotY); i++) 
 		{
 			slots.Add(new Item());	
+			//add blank objects
 			inventory.Add (new Item());
 		}
 		//Gets items from gameobjects with a specific tag
 		database = GameObject.FindGameObjectWithTag("Item Database").GetComponent<ItemDatabase>(); 
-		//puts a single item to the inventory slots 
-		//inventory[0] = database.items[0];
+
+		//Add in current items owned here:
 		AddItem (0);
 		AddItem (1);
 		AddItem (2);
@@ -43,6 +45,7 @@ public class Inventory : MonoBehaviour {
 	//makes the inventory appear and disappear when the button i is pressed
 	void Update()
 	{
+		//if the user presses i, inventory hides
 		if(Input.GetButtonDown("Inventory"))
 		{
 			showInventory = !showInventory;
@@ -53,10 +56,12 @@ public class Inventory : MonoBehaviour {
 	//Creates the GUI box used in the hoverable item info
 	void OnGUI() 
 	{
-		tooltip = "";
+		//OUTPUT INVENTORY OPTIONS 
+		tooltip = "";//string with item details is null when there is no items
 		GUI.skin = skin;
 		if(showInventory) 
 		{
+			//draw everything
 			DrawIventory();
 		}
 		if (showToolTip && showInventory)
@@ -67,6 +72,7 @@ public class Inventory : MonoBehaviour {
 
 	//draws items in slots that exist in the slots/inventory lists, otherwise, draws an empty box for future items
 	//Creates infomation box over items in inventory
+	//Determines if an item is clicked or not and returns global variables for SpawnPaperboy.cs to use for tower instanciation
 	void DrawIventory()
 	{
 		int i = 0;
@@ -76,55 +82,56 @@ public class Inventory : MonoBehaviour {
 			{
 				//Rectangle object for slots
 				Rect slotRect = new Rect(x*55, y*55, 50, 50);
-				GUI.Box (slotRect, "", skin.GetStyle("slot"));
-				slots[i] = inventory[i];
-				if(slots[i].ItemName != null)
+				GUI.Box (slotRect, "", skin.GetStyle("slot")); //Color slots with skin
+				slots[i] = inventory[i];//have a copy of inventory
+
+				if(slots[i].ItemName != null) //If there is an item
 				{
 					if(!click)
 					{
+						//Draw the item normally
 						GUI.DrawTexture(slotRect, slots[i].ItemIcon);
 					}
-					else{
-						if(id != slots[i].ItemID)
+					else //If the user clicked on the item, highlight it blue
+					{
+						if(SPAWNTOWER != slots[i].ItemID)
 						{
+							//make sure other items in inventory do not turn blue - only the clicked object should
 							GUI.DrawTexture(slotRect, slots[i].ItemIcon);
 						}
-						else{
-						Texture2D highlight_texture = Resources.Load<Texture2D>(slots[id].ItemName+"_Highlight");
-							GUI.DrawTextureWithTexCoords(spot, highlight_texture, new Rect(0f, 0f, 1f, 1f));}
+						else
+						{
+							//Highlight blue
+							Texture2D highlight_texture = Resources.Load<Texture2D>(slots[id].ItemName+"_Highlight");
+							GUI.DrawTextureWithTexCoords(spot, highlight_texture, new Rect(0f, 0f, 1f, 1f));
+						}
+						//Poop is a global variable from SpawnPaperBoy that determines if the tower has been placed
 						if(mappy.GetComponent<SpawnPaperboy> ().poop)
 						{
+							//If the tower has been placed, update global variables from the first item click
 							click = false;
 							mappy.GetComponent<SpawnPaperboy> ().poop = false;
 							SPAWNTOWER = -1;
-							id = -1;
 						}
 					}
 
 					//if the mouse is hovered over it, display information from createtooltip info
 					if(slotRect.Contains (Event.current.mousePosition))
 					{
+						//output item information
 						tooltip = CreateToolTip(slots[i]);
 						showToolTip = true;
+
+						//If there is a click, change global variables for SpawnPaperBoy to access
 						if(Input.GetMouseButtonDown(0))
 						{
-							spot = slotRect;
-							click = true;
-							id = slots[i].ItemID;
-							SPAWNTOWER = id;
+							spot = slotRect; //position of item in inventory
+							click = true; 
+							SPAWNTOWER = slots[i].ItemID;
 						}
-						/*if(!click){
-							GUI.DrawTexture(slotRect, slots[i].ItemIcon);
-							SPAWNTOWER = -1;
-						}
-						else{
-							BUTTONFACE = highlight_texture;
-							Click_Placement();
-						}*/
 					}
-
-					
 				}
+				//reset item information
 				if(tooltip == "")
 				{
 					showToolTip = false;
@@ -160,6 +167,7 @@ public class Inventory : MonoBehaviour {
 
 		}
 	}
+
 	//if the item exists in the player's inventory, return true. else return false
 	bool FindItem(int id)
 	{
