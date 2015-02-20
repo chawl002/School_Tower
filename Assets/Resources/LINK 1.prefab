@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 435058}
   - 212: {fileID: 21235058}
-  - 114: {fileID: 11435058}
   - 61: {fileID: 6170140}
   - 114: {fileID: 11407904}
+  - 114: {fileID: 11436166}
   m_Layer: 0
   m_Name: LINK 1
   m_TagString: Untagged
@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6158b404cb7c4ec6a8783c58683b992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11435058
+--- !u!114 &11436166
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -61,13 +61,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 135058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbc1530d1fdba4d888a766f790304f0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 67070f2cf47eb45e0b00e997289412b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   temp: 0
   proj: {fileID: 184110, guid: 971b3e25f4c864115953988303b51c1a, type: 2}
-  range: 4
-  enemies: []
 --- !u!212 &21235058
 SpriteRenderer:
   m_ObjectHideFlags: 1

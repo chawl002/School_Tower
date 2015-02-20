@@ -73,7 +73,6 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
-    tileSizeHint: 0
   m_NavMesh: {fileID: 19400000, guid: 2d85cd48fdfef604189f0f6f29e4c5dc, type: 2}
 --- !u!1001 &1010437
 Prefab:
@@ -263,9 +262,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 551036565}
   - 212: {fileID: 551036564}
-  - 114: {fileID: 551036563}
   - 61: {fileID: 551036562}
   - 114: {fileID: 551036561}
+  - 114: {fileID: 551036563}
   m_Layer: 0
   m_Name: LINK 1
   m_TagString: Untagged
@@ -300,19 +299,17 @@ BoxCollider2D:
 --- !u!114 &551036563
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11435058, guid: d2b00c19e0f84483ca69d2769c95afe5,
+  m_PrefabParentObject: {fileID: 11436166, guid: d2b00c19e0f84483ca69d2769c95afe5,
     type: 2}
   m_PrefabInternal: {fileID: 2041060128}
   m_GameObject: {fileID: 551036560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbc1530d1fdba4d888a766f790304f0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 67070f2cf47eb45e0b00e997289412b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   temp: 0
   proj: {fileID: 184110, guid: 971b3e25f4c864115953988303b51c1a, type: 2}
-  range: 4
-  enemies: []
 --- !u!212 &551036564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -553,11 +550,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 975729474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55e62625d6c294a1ab718e28f2811d0a, type: 3}
+  m_Script: {fileID: 11500000, guid: e7d5f3d49a04a4f5496ab3ee6a92a85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   temp: 0
   money: {fileID: 0}
+  enemies: []
 --- !u!58 &975729478
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1215,6 +1213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009dee7a8f71c40849c24ebb8d586143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poop: 0
 --- !u!1 &1634748033
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,9 +6,13 @@ public class ProjPro : MonoBehaviour {
 	public float temp = 0;
 	//public GameObject proj;
 	public GameObject money;
+	//public 
 
 	// Use this for initialization
 	void Start () {
+
+
+
 		money = GameObject.Find ("money");
 		if (money.GetComponent<MoneyHandle> ().mon - 15 < 0)
 			Destroy (gameObject);

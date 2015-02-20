@@ -6,6 +6,7 @@ public class SpawnPaperboy : MonoBehaviour {
 	bool fclick = false;
 	bool sclick = false;
 	float temp = 0;
+	public bool poop = false;
 
 	// Use this for initialization
 	void Start () {
@@ -39,6 +40,7 @@ public class SpawnPaperboy : MonoBehaviour {
 
 			Vector3 pos = new Vector3(ray.origin.x, ray.origin.y, -0.2f);
 			Instantiate(Resources.Load("LINK 1"), pos, transform.rotation);
+			poop = true;
 		}
 		else if (Input.GetMouseButtonDown (0) && fclick == true) {
 			sclick = true;
