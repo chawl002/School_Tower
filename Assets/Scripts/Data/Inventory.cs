@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour {
 	public int SPAWNTOWER = -1; //GLOBAL VARIABLE EQUALS TO ID NUMBER - SEE ITEM.CS FOR MORE INFO
+	public int LastSpawnTower = -1; //Denotes the most recent tower placed
 	public bool click = false; //Did the user click on the item in inventory
 	private Rect spot; //same as slotRect - saves the position of the clicked on item
 
@@ -84,6 +85,7 @@ public class Inventory : MonoBehaviour {
 				//If the tower has been placed, update global variables from the first item click
 				click = false;
 				mappy.GetComponent<SpawnPaperboy> ().poop = false;
+				LastSpawnTower = SPAWNTOWER;
 				SPAWNTOWER = -1;
 
 			}

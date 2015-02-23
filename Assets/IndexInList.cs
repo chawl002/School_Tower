@@ -7,6 +7,9 @@ public class IndexInList : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		INDEX = GetComponentInParent<AssignWeap> ().ItemIndexInInventory;
+		Debug.Log ("I am a " + name + " and my index is " + INDEX);
 	
 	}
 	

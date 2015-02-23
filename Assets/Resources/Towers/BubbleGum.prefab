@@ -12,6 +12,8 @@ GameObject:
   - 114: {fileID: 11496186}
   - 61: {fileID: 6196698}
   - 114: {fileID: 11472470}
+  - 114: {fileID: 11408286}
+  - 114: {fileID: 11401612}
   m_Layer: 0
   m_Name: BubbleGum
   m_TagString: tower
@@ -42,6 +44,36 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 8, y: 11}
   m_Center: {x: 0, y: 0}
+--- !u!114 &11401612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67070f2cf47eb45e0b00e997289412b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shoot_lr: 1
+  shoot_ud: 0
+  temp: 0
+  our: {fileID: 0}
+  proj: {fileID: 127066, guid: 4df8b7e503e9f43d9ad8360f51a1f0c6, type: 2}
+  projClone: {fileID: 0}
+--- !u!114 &11408286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f9b541643fb24d2b9787d2aeebc01e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemIndexInInventory: -1
+  Invent: {fileID: 0}
 --- !u!114 &11472470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -59,7 +91,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196186}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69d0ea87da90144b39caae70b6a30476, type: 3}
   m_Name: 

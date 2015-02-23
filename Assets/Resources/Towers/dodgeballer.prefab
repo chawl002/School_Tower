@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6196988}
   - 114: {fileID: 11496988}
   - 114: {fileID: 11418626}
+  - 114: {fileID: 11418080}
   m_Layer: 0
   m_Name: dodgeballer
   m_TagString: tower
@@ -42,6 +43,19 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .639999986, y: .920000017}
   m_Center: {x: 0, y: 0}
+--- !u!114 &11418080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f9b541643fb24d2b9787d2aeebc01e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemIndexInInventory: -1
+  Invent: {fileID: 0}
 --- !u!114 &11418626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,7 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   temp: 0
   proj: {fileID: 193834, guid: f194e9dda770746ae8bcd695cc50fd28, type: 2}
-  range: 1
+  range: 3
   enemies: []
 --- !u!114 &11496988
 MonoBehaviour:

@@ -8,15 +8,32 @@ public class ProjPro : MonoBehaviour {
 	public float temp = 0;
 	//public GameObject proj;
 	public GameObject money;
-	//public 
+	public GameObject Inventor;
+	public GameObject Invent;
+	public int ItemIndexInInventory = -1;
+
 
 	// Use this for initialization
 	void Start () {
+
+		Invent = GameObject.Find ("Inventory");
+
+		ItemIndexInInventory = GetComponentInParent<AssignWeap> ().ItemIndexInInventory;//GetComponent<IndexInList> ().INDEX;//Invent.GetComponent<Inventory> ().SPAWNTOWER;
+
+		Inventor = GameObject.Find ("Item Database");
+
+
+
 		money = GameObject.Find ("money");
-		if (money.GetComponent<MoneyHandle> ().mon - 15 < 0)
+
+
+		//Debug.Log (Inventor.GetComponent<ItemDatabase> ().items [0].ItemName);//GetComponent<IndexInList> ().INDEX].itemCost);
+
+		if (money.GetComponent<MoneyHandle> ().mon - Inventor.GetComponent<ItemDatabase>().items[ItemIndexInInventory].itemCost < 0)
 			Destroy (gameObject);
+
 		else
-			money.GetComponent<MoneyHandle>().mon -= 15;
+			money.GetComponent<MoneyHandle>().mon -= Inventor.GetComponent<ItemDatabase>().items[ItemIndexInInventory].itemCost;
 		/*if (Input.GetKey (KeyCode.UpArrow)) {
 			a = 1.0f;
 			b = 0;
