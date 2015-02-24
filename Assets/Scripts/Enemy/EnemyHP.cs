@@ -3,6 +3,7 @@ using System.Collections;
 
 public class EnemyHP : MonoBehaviour {
 	public int HP = 4;
+	bool dropmon = false;
 
 	// Use this for initializ
 	void Start () {
@@ -10,9 +11,14 @@ public class EnemyHP : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (HP <= 0) {
-			Vector3 pos = new Vector3(transform.position.x, transform.position.y, -0.2f);
-			Instantiate(Resources.Load("droppedmoney"), pos, transform.rotation);
+
+		if (HP <= 0 && !dropmon) {
+					Vector3 pos = new Vector3(transform.position.x, transform.position.y, -0.2f);
+					Instantiate(Resources.Load("droppedmoney"), pos, transform.rotation);
+					dropmon = true;
+				}
+
+		if (HP <= 0 && GetComponent<RunOff>().ranaway) {
 			Destroy (gameObject);
 		}
 	}
