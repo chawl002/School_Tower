@@ -41,6 +41,7 @@ public class Inventory : MonoBehaviour {
 		AddItem (0);
 		AddItem (1);
 		AddItem (2);
+		AddItem (3);
 	}
 
 	//makes the inventory appear and disappear when the button i is pressed

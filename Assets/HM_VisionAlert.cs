@@ -17,6 +17,15 @@ public class HM_VisionAlert : MonoBehaviour {
 		cen.y = transform.position.y;
 
 		Collider2D[] hitColliders = Physics2D.OverlapCircleAll (cen, 5);
+
+		for (int i=0; i < hitColliders.Length; ++i) {
+			if(hitColliders[i].tag == "tower" && hitColliders[i].GetComponent<TowRunOff>().seen == false)
+			{
+			hitColliders[i].GetComponent<TowRunOff>().charged = true;
+			hitColliders[i].GetComponent<TowRunOff>().seen = true;
+			}
+
+				}
 	
 		//CHECK FOR TOWERS FROM HERE
 

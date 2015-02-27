@@ -4,6 +4,7 @@ using System.Collections;
 public class RunOff : MonoBehaviour {
 
 	public bool ranaway = false;
+
 	float temp = 0;
 
 	// Use this for initialization

@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11407904}
   - 114: {fileID: 11436166}
   - 114: {fileID: 11464414}
+  - 114: {fileID: 11485178}
   m_Layer: 0
   m_Name: Paperwad
   m_TagString: tower
@@ -84,6 +85,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemIndexInInventory: -1
   Invent: {fileID: 0}
+--- !u!114 &11485178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfde84a3d1bbd420b991a73894627d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ranaway: 0
+  seen: 0
+  charged: 0
 --- !u!212 &21235058
 SpriteRenderer:
   m_ObjectHideFlags: 1

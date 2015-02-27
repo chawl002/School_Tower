@@ -3,8 +3,11 @@ using System.Collections;
 
 public class HallMon : MonoBehaviour {
 
+	public bool hasVision = false;
+
 	// Use this for initialization
 	void Start () {
+
 	
 	}
 	
