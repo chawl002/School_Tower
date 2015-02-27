@@ -29,7 +29,7 @@ public class SpawnEnemy : MonoBehaviour {
 			GameObject enemy = enemy1;
 			float rander = Random.Range(0, 30);
 
-			if(rander >= 26)
+			if(rander >= 26 && enemy2!=null)
 				enemy = enemy2;
 
 			GameObject g = (GameObject)Instantiate(enemy, transform.position, Quaternion.identity);

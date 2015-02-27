@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -121,4 +121,4 @@ public class BellReady_1 : MonoBehaviour
 			clicked = true;
 		} 
 	}
-}
+}*/
