@@ -26,7 +26,7 @@ public class Inventory : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		mappy = GameObject.Find ("MapWithPaths");
+		//mappy = GameObject.Find ("MapWithPaths");
 		//puts null box background with no items to show placement and how much you can own
 		for (int i = 0; i < (SlotX * SlotY); i++) 
 		{

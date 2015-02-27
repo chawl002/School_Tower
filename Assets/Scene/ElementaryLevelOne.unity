@@ -1004,7 +1004,7 @@ MonoBehaviour:
   skin: {fileID: 11400000, guid: 3c1fddd4eb3a6fe4cb0da9d79b95e020, type: 2}
   inventory: []
   slots: []
-  mappy: {fileID: 0}
+  mappy: {fileID: 1572255698}
 --- !u!4 &1455665421
 Transform:
   m_ObjectHideFlags: 0
