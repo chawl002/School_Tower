@@ -9,7 +9,7 @@ public class IndexInList : MonoBehaviour {
 	void Start () {
 
 		INDEX = GetComponentInParent<AssignWeap> ().ItemIndexInInventory;
-		Debug.Log ("I am a " + name + " and my index is " + INDEX);
+		//Debug.Log ("I am a " + name + " and my index is " + INDEX);
 	
 	}
 	

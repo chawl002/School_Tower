@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11483086}
   - 61: {fileID: 6187398}
   - 114: {fileID: 11417168}
+  - 114: {fileID: 11446476}
   m_Layer: 0
   m_Name: baseball
   m_TagString: tower
@@ -57,6 +58,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemIndexInInventory: -1
   Invent: {fileID: 0}
+--- !u!114 &11446476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfde84a3d1bbd420b991a73894627d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ranaway: 0
+  seen: 0
+  charged: 0
 --- !u!114 &11483082
 MonoBehaviour:
   m_ObjectHideFlags: 1
