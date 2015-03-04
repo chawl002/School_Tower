@@ -12,6 +12,8 @@ public class EnemyMove : MonoBehaviour {
 	public float damageval = 0.25f;
 	
 	public float speed = 0.015f;
+
+	public Vector2 dir; //direction enemy is facing
 	
 	void Start()
 	{
@@ -20,10 +22,41 @@ public class EnemyMove : MonoBehaviour {
 		
 		deltapos.x = 0;
 		deltapos.y = 0;
+
+		Vector2 fWP;
+		Vector2 face;
+		
+		fWP.x = waypoints[cur].GetComponent<Transform>().position.x;
+		fWP.y = waypoints[cur].GetComponent<Transform>().position.y;
+		
+		face.x = fWP.x - GetComponent<Transform>().position.x;
+		face.y = fWP.y - GetComponent<Transform>().position.y;
+
+		if (face.x * face.x >= face.y * face.y) {
+			if (face.x > 0) {
+				dir.x = 1;
+				dir.y = 0;
+			} else {
+				dir.x = -1;
+				dir.y = 0;
+			}
+		} else {
+			if (face.y > 0) {
+				dir.y = 1;
+				dir.x = 0;
+			} else {
+				dir.y = -1;
+				dir.x = 0;
+			}
+		}
+
 	}
 	
 	
 	void FixedUpdate () {
+
+
+
 		
 		//fix spinning on enemies
 		if (transform.rotation.z != 0)
@@ -46,6 +79,38 @@ public class EnemyMove : MonoBehaviour {
 		}
 		// Waypoint reached, select next one
 		else {
+
+			Vector2 currentWP;
+			Vector2 nextWP;
+			Vector2 vect;
+			
+			currentWP.x = waypoints[cur].GetComponent<Transform>().position.x;
+			currentWP.y = waypoints[cur].GetComponent<Transform>().position.y;
+			
+			nextWP.x = waypoints[cur+1].GetComponent<Transform>().position.x;
+			nextWP.y = waypoints[cur+1].GetComponent<Transform>().position.y;
+			
+			vect.x = nextWP.x - currentWP.x;
+			vect.y = nextWP.y - currentWP.y;
+			
+			if (vect.x * vect.x >= vect.y * vect.y) {
+				if (vect.x > 0) {
+					dir.x = 1;
+					dir.y = 0;
+				} else {
+					dir.x = -1;
+					dir.y = 0;
+				}
+			} else {
+				if (vect.y > 0) {
+					dir.y = 1;
+					dir.x = 0;
+				} else {
+					dir.y = -1;
+					dir.x = 0;
+				}
+			}
+
 			cur = cur + 1;
 		}
 		

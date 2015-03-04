@@ -17,7 +17,7 @@ GameObject:
   - 114: {fileID: 11422150}
   - 114: {fileID: 11422152}
   m_Layer: 0
-  m_Name: JerkJock
+  m_Name: BigBully
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,11 @@ MonoBehaviour:
   - {fileID: 434130, guid: 6ee1862cba42c904d95eabb72a3a56b4, type: 2}
   healthBar: {fileID: 0}
   cur: 0
+  lastpos: {x: 0, y: 0}
+  deltapos: {x: 0, y: 0}
+  damageval: .25
   speed: .0149999997
+  dir: {x: 0, y: 0}
 --- !u!114 &11422148
 MonoBehaviour:
   m_ObjectHideFlags: 1

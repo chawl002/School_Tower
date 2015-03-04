@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11460068}
   - 114: {fileID: 11460070}
   m_Layer: 0
-  m_Name: Money
+  m_Name: money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,6 +42,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mon: 0
+  timerf: 0
+  timers: 0
+  timerm: 0
+  victory: 0
   temp: 0
   mtemp: 0
   guicust:
@@ -103,6 +107,7 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 0
     m_StretchHeight: 0
+  muse: {fileID: 0}
 --- !u!114 &11460070
 MonoBehaviour:
   m_ObjectHideFlags: 1

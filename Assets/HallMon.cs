@@ -11,6 +11,7 @@ public class HallMon : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Vector3 pos = transform.position;
+		pos.z = -0.01f;
 		
 		visClone = Instantiate(vis, pos, transform.rotation) as GameObject; //Instantiate(tragedy);
 		visClone.transform.parent = gameObject.transform;
