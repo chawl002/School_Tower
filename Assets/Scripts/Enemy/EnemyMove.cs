@@ -143,6 +143,14 @@ public class EnemyMove : MonoBehaviour {
 			Destroy (other.gameObject);
 			speed = 0f;
 		}
+
+		if (other.name == "Potio" || other.name == "Potio(Clone)" && GetComponent<EnemyHP>().HP != 0) {
+			
+			Destroy (other.gameObject);
+			speed = speed * 2f;
+			GetComponent<EnemyHP>().HP += 2;
+
+		}
 		
 	}
 	
