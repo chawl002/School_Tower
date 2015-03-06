@@ -4,6 +4,10 @@ using System.Collections;
 public class GumPower : MonoBehaviour {
 
 	public float temp = 0;
+	public Vector2 dirk;
+
+	float shot_lr, shot_ud;
+
 	//public GameObject proj;
 	public GameObject money;
 	
@@ -15,12 +19,19 @@ public class GumPower : MonoBehaviour {
 						Destroy (gameObject);
 		else
 			money.GetComponent<MoneyHandle>().mon -= 25;
+
+		shot_lr = GetComponentInParent<Projectile>().shoot_lr;
+		shot_ud = GetComponentInParent<Projectile>().shoot_ud;
+
+
+
 	}
 
 	// Update is called once per frame
 	void Update () {
 		if(temp < 0.5)
-				transform.Translate(0, -0.05f, 0);
+
+				transform.Translate(0.05f*shot_lr, 0.05f*shot_ud, 0);
 
 		temp += Time.deltaTime;
 		if (temp >= 3) {
