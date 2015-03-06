@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pos: {x: 0, y: 0, z: 0}
-  xOffset: -.200000003
+  xOffset: -.5
   yOffset: 1
   aTexture: {fileID: 2800000, guid: ecee8e38048162d4b848bb286c7332c9, type: 3}
 --- !u!114 &11471198
@@ -99,11 +99,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {fileID: 400004, guid: 9029c70b9d05141c896854a50b181ffa, type: 2}
-  - {fileID: 400002, guid: 9029c70b9d05141c896854a50b181ffa, type: 2}
+  - {fileID: 400002, guid: afd98073d69934a1b85b34dd32d13a87, type: 2}
+  - {fileID: 400000, guid: afd98073d69934a1b85b34dd32d13a87, type: 2}
+  - {fileID: 400006, guid: afd98073d69934a1b85b34dd32d13a87, type: 2}
   healthBar: {fileID: 0}
   cur: 0
+  lastpos: {x: 0, y: 0}
+  deltapos: {x: 0, y: 0}
+  damageval: .25
   speed: .0149999997
+  dir: {x: 0, y: 0}
 --- !u!114 &11471200
 MonoBehaviour:
   m_ObjectHideFlags: 1

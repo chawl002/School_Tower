@@ -911,6 +911,9 @@ MonoBehaviour:
   - {fileID: 434256, guid: ce422696bd4ba7d47b481e3c0e3f7e4c, type: 2}
   healthBar: {fileID: 0}
   cur: 0
+  lastpos: {x: 0, y: 0}
+  deltapos: {x: 0, y: 0}
+  damageval: .25
   speed: .0149999997
 --- !u!212 &974153920
 SpriteRenderer:
@@ -1165,7 +1168,7 @@ Transform:
   m_GameObject: {fileID: 1058328233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.6000004, y: 2.76999998, z: -.00999999978}
-  m_LocalScale: {x: 1.60000002, y: 1.60000002, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1190,7 +1193,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 202166761}
   m_GameObject: {fileID: 1058328233}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfde84a3d1bbd420b991a73894627d24, type: 3}
   m_Name: 
@@ -1297,7 +1300,6 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -1327,6 +1329,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
+  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1798,7 +1801,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0
@@ -1946,6 +1948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275e4f9f5e3a94713a406d48b1b38a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  is_mad: 0
 --- !u!58 &1873955870
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2009,6 +2012,9 @@ MonoBehaviour:
   - {fileID: 434256, guid: ce422696bd4ba7d47b481e3c0e3f7e4c, type: 2}
   healthBar: {fileID: 0}
   cur: 0
+  lastpos: {x: 0, y: 0}
+  deltapos: {x: 0, y: 0}
+  damageval: .25
   speed: .0149999997
 --- !u!212 &1873955874
 SpriteRenderer:
