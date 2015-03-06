@@ -11,6 +11,7 @@ public class ProjPro : MonoBehaviour {
 	public GameObject Inventor;
 	public GameObject Invent;
 	public int ItemIndexInInventory = -1;
+	public int damage = 0;
 
 
 	// Use this for initialization
@@ -22,15 +23,21 @@ public class ProjPro : MonoBehaviour {
 
 		Inventor = GameObject.Find ("Item Database");
 
+		damage = Inventor.GetComponent<ItemDatabase>().items[ItemIndexInInventory].Damage;
 
+		GetComponent<damage> ().damag = damage;
+
+		Debug.Log ("My damage is " + damage);
 
 		money = GameObject.Find ("money");
 
 
 		//Debug.Log (Inventor.GetComponent<ItemDatabase> ().items [0].ItemName);//GetComponent<IndexInList> ().INDEX].itemCost);
 
-		if (money.GetComponent<MoneyHandle> ().mon - Inventor.GetComponent<ItemDatabase>().items[ItemIndexInInventory].itemCost < 0)
-			Destroy (gameObject);
+		if (money.GetComponent<MoneyHandle> ().mon - Inventor.GetComponent<ItemDatabase> ().items [ItemIndexInInventory].itemCost < 0) {
+						money.GetComponent<MoneyHandle> ().mon = 0;
+						Destroy (gameObject);
+				}
 
 		else
 			money.GetComponent<MoneyHandle>().mon -= Inventor.GetComponent<ItemDatabase>().items[ItemIndexInInventory].itemCost;

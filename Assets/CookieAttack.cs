@@ -26,6 +26,9 @@ public class CookieAttack : MonoBehaviour {
 			if(hitColliders[i].tag == "tower")
 			{
 				moni.GetComponent<MoneyHandle>().mon -= 25;
+				if(moni.GetComponent<MoneyHandle>().mon <= 0)
+					moni.GetComponent<MoneyHandle>().mon = 0;
+
 				Destroy(gameObject);
 			}
 			

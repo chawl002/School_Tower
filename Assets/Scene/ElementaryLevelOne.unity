@@ -720,8 +720,8 @@ MonoBehaviour:
   SPAWNTOWER: -1
   LastSpawnTower: -1
   click: 0
-  SlotX: 5
-  SlotY: 6
+  SlotX: 4
+  SlotY: 2
   skin: {fileID: 11400000, guid: 3c1fddd4eb3a6fe4cb0da9d79b95e020, type: 2}
   inventory: []
   slots: []
@@ -1227,7 +1227,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a4f965a5d00df431c802f24e5bbcd8f7, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a4f965a5d00df431c802f24e5bbcd8f7, type: 2}
       propertyPath: m_Name

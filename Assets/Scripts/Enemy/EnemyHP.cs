@@ -33,7 +33,10 @@ public class EnemyHP : MonoBehaviour {
 	{
 		if (other.tag == "attack") {
 			if(other.name != "GUM(Clone)")
-				HP = HP - 1;
+			{
+				Debug.Log (other.gameObject.GetComponent<damage>().damag);
+				HP = HP - other.gameObject.GetComponent<damage>().damag;
+			}
 			if(other.name != "baseball(Clone)")
 				Destroy (other.gameObject);
 		}
