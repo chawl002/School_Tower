@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ranaway: 0
+  audity: {fileID: 8300000, guid: 8b36b9949df47484585d830b669860b7, type: 3}
 --- !u!114 &11443792
 MonoBehaviour:
   m_ObjectHideFlags: 1
