@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: College_bully1
+  m_Name: College_bully_ML
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

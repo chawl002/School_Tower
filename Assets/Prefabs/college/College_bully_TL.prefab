@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: College_bully2
+  m_Name: College_bully_TL
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {fileID: 400006, guid: afd98073d69934a1b85b34dd32d13a87, type: 2}
+  - {fileID: 400008, guid: 74dfbaccbfe7e449288ce7fbb82f6b15, type: 2}
+  - {fileID: 400006, guid: 74dfbaccbfe7e449288ce7fbb82f6b15, type: 2}
+  - {fileID: 400002, guid: 74dfbaccbfe7e449288ce7fbb82f6b15, type: 2}
+  - {fileID: 400000, guid: 74dfbaccbfe7e449288ce7fbb82f6b15, type: 2}
   healthBar: {fileID: 0}
   cur: 0
   lastpos: {x: 0, y: 0}
