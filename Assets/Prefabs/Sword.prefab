@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11473160}
   - 114: {fileID: 11441506}
   - 114: {fileID: 11441830}
+  - 82: {fileID: 8205278}
   m_Layer: 0
   m_Name: Sword
   m_TagString: attack
@@ -43,6 +44,64 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .639999986, y: .852151453}
   m_Center: {x: 0, y: -.00443649292}
+--- !u!82 &8205278
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184110}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 275d59a08db194c21a4f0fe6836f6525, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11441506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,10 +113,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55e62625d6c294a1ab718e28f2811d0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shoot_lr: 1
-  shoot_ud: 0
+  lr: 0
+  ud: 0
   temp: 0
   money: {fileID: 0}
+  Inventor: {fileID: 0}
+  Invent: {fileID: 0}
+  ItemIndexInInventory: -1
 --- !u!114 &11441830
 MonoBehaviour:
   m_ObjectHideFlags: 1
