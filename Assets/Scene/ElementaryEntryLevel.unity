@@ -1100,16 +1100,6 @@ GameObject:
   - 212: {fileID: 1572255701}
   - 61: {fileID: 1572255700}
   - 61: {fileID: 1572255699}
-  - 61: {fileID: 1572255712}
-  - 61: {fileID: 1572255711}
-  - 61: {fileID: 1572255710}
-  - 61: {fileID: 1572255709}
-  - 61: {fileID: 1572255708}
-  - 61: {fileID: 1572255707}
-  - 61: {fileID: 1572255706}
-  - 61: {fileID: 1572255705}
-  - 61: {fileID: 1572255704}
-  - 61: {fileID: 1572255703}
   - 114: {fileID: 1572255713}
   m_Layer: 0
   m_Name: MapWithPaths
@@ -1127,7 +1117,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 3, y: 6}
+  m_Size: {x: 2.70000005, y: 6}
   m_Center: {x: -1.5, y: 0}
 --- !u!61 &1572255700
 BoxCollider2D:
@@ -1138,7 +1128,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 3, y: 6}
+  m_Size: {x: 2.70000005, y: 6}
   m_Center: {x: 1.5, y: 0}
 --- !u!212 &1572255701
 SpriteRenderer:
@@ -1174,116 +1164,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!61 &1572255703
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572255698}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: .143916637, y: .49045971}
-  m_Center: {x: -.0312821008, y: -1.25476742}
---- !u!61 &1572255704
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572255698}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: .797369838, y: .685104966}
-  m_Center: {x: .44142729, y: -1.15744603}
---- !u!61 &1572255705
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572255698}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: .644433498, y: .831089258}
-  m_Center: {x: -.427524894, y: -1.08445334}
---- !u!61 &1572255706
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572255698}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: .157819852, y: 1.7556572}
-  m_Center: {x: .921089888, y: -.62217015}
---- !u!61 &1572255707
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572255698}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: .171722144, y: .455702037}
-  m_Center: {x: .61521858, y: -.125129879}
---- !u!61 &1572255708
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572255698}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1.46472442, y: .309719801}
-  m_Center: {x: -.0312817395, y: -.510943532}
---- !u!61 &1572255709
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572255698}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: .242306948, y: 2.17827272}
-  m_Center: {x: -.87884593, y: -.410861909}
---- !u!61 &1572255710
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572255698}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1.54265857, y: .560841918}
-  m_Center: {x: -.228670821, y: .959852219}
---- !u!61 &1572255711
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572255698}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1.7045666, y: .259506464}
-  m_Center: {x: -.147716537, y: 1.37024593}
---- !u!61 &1572255712
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572255698}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: .291887879, y: .970940351}
-  m_Center: {x: .85405606, y: 1.01452839}
 --- !u!114 &1572255713
 MonoBehaviour:
   m_ObjectHideFlags: 0

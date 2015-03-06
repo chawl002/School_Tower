@@ -3,40 +3,30 @@ using System.Collections;
 
 public class LevelSelect : MonoBehaviour {
 
-	/*public Texture btnEle;
-	public Texture btnBack;
-	
-	public float widthPercent = 0.15f;
-	public float heightPercent = 0.15f;
-	
-	void OnGUI() {
-		if (!btnEle) {
-			Debug.LogError("Please assign a texture on the inspector");
-			return;
-		}
-		if (!btnBack) {
-			Debug.LogError("Please assign a texture on the inspector");
-			return;
-		}
-		//position of the elementary level choice
+	public GameObject[] Levels;
+	private int CurrentLevel = 1;
+	private int LevelCounter = 0;
 
-		Rect r = new Rect(Screen.width / 2 - (Screen.width/8) - 190f, Screen.height/2 - 10f, Screen.width * widthPercent, Screen.height * heightPercent); 
-
-		Rect r2 = new Rect(Screen.width / 2 - (Screen.width/8) + 300f, Screen.height/2 + 90f, Screen.width * widthPercent, Screen.height * heightPercent); 
-
-		if (GUI.Button(r, btnEle, GUIStyle.none)){
-			Debug.Log("Clicked the button with an image");
-			Application.LoadLevel("ElementaryLevelOne");
+	void Start()
+	{
+		foreach (GameObject Level  in Levels) {
+			//Only show levels by completion
+			if (LevelCounter < CurrentLevel)
+				Level.SetActive (true);
+			else
+				Level.SetActive (false);
+			
+			LevelCounter = LevelCounter + 1;
 		}
-		if (GUI.Button(r2, btnBack, GUIStyle.none)){
-			Debug.Log("Clicked the button with an image");
-			Application.LoadLevel("OpeningTitle");
-		}
-	}*/
+	}
+
 	public void GoBack(){
 		Application.LoadLevel(0);
 	}
 	public void GameStart(){
 		Application.LoadLevel(2);
+	}
+	public void goHighSchool(){
+		Application.LoadLevel ("HighSchoolLevel");
 	}
 }
