@@ -8,6 +8,7 @@ public class MoneyHandle : MonoBehaviour {
 	public int timers = 0;
 	public int timerm = 0;
 	public bool victory = false;
+	public string LoadNext = "GameSelection";
 
 	public float temp = 0;
 	public int mtemp = 0;
@@ -49,7 +50,7 @@ public class MoneyHandle : MonoBehaviour {
 				}
 
 		if (timerm >= 3)
-			Application.LoadLevel("GameSelection");
+			Application.LoadLevel(LoadNext);
 
 	}
 

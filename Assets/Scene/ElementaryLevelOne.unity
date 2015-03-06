@@ -133,6 +133,10 @@ Prefab:
       propertyPath: guicust.m_FontSize
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 11460068, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
+      propertyPath: LoadNext
+      value: HighSchoolLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
   m_RootGameObject: {fileID: 822607249}
@@ -316,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95874961838b89540b9b06656415ef07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 5
+  interval: 8
   decreaseInterval: 5
   enemy1: {fileID: 100000, guid: c23ecb18664c44b2191cc79504d07d1b, type: 2}
   enemy2: {fileID: 105962, guid: 6266278af16874963aef794db40e8de2, type: 2}
@@ -382,6 +386,7 @@ MonoBehaviour:
   timers: 0
   timerm: 0
   victory: 0
+  LoadNext: HighSchoolLevel
   temp: 0
   mtemp: 0
   guicust:
@@ -623,6 +628,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -652,7 +658,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
-  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -987,6 +992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
+  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0
