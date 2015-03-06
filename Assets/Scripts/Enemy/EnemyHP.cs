@@ -32,11 +32,17 @@ public class EnemyHP : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "attack") {
-			if(other.name != "GUM(Clone)")
+			if(other.name != "GUM(Clone)" && other.name != "Candy(Clone)" && other.name != "Dodgeball(Clone)")
 			{
-				Debug.Log (other.gameObject.GetComponent<damage>().damag);
 				HP = HP - other.gameObject.GetComponent<damage>().damag;
 			}
+
+			if(other.name == "Dodgeball(Clone)")
+			{
+				HP = HP - 1;
+			}
+
+
 			if(other.name != "baseball(Clone)")
 				Destroy (other.gameObject);
 		}

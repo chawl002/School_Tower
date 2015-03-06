@@ -11,5 +11,6 @@ public class ItemDatabase : MonoBehaviour {
 		items.Add (new Item ("baseball", 2, "Deals 1 damage \n point towards enemies. Can hit multiple enemies", 1, 8, 0, Item.ItemType.Weapon, 40));
 		items.Add (new Item ("dodgeballer", 3, "Deals 1 damage \n point towards nearby enemies. Can hit multiple enemies", 1, 8, 0, Item.ItemType.Weapon, 35));
 		items.Add (new Item ("paperplane", 4, "Deals 2 damage \n point towards nearby enemies.", 2, 7, 0, Item.ItemType.Weapon, 50));
+		items.Add (new Item ("candy", 5, "Slows an enemy down.", 0, 8, 0, Item.ItemType.Stat, 20));
 	}
 }

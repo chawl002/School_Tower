@@ -13,6 +13,8 @@ public class EnemyMove : MonoBehaviour {
 	
 	public float speed = 0.015f;
 
+	public float sspeed = 0.015f;
+
 	public Vector2 dir; //direction enemy is facing
 	
 	void Start()
@@ -124,7 +126,7 @@ public class EnemyMove : MonoBehaviour {
 			
 			if(temp >= 2.2)
 			{
-				speed = 0.015f;
+				speed = sspeed;
 				temp = 0;
 			}
 		}
@@ -144,8 +146,14 @@ public class EnemyMove : MonoBehaviour {
 		if (other.name == "GUM" || other.name == "GUM(Clone)") {
 			
 			Destroy (other.gameObject);
+			sspeed = speed;
 			speed = 0f;
 		}
+
+		if (other.name == "Candy" || other.name == "Candy(Clone)") {
+						Destroy (other.gameObject);
+						speed = speed/1.75f;
+				}
 
 		if (other.name == "Potio" || other.name == "Potio(Clone)" && GetComponent<EnemyHP>().HP != 0) {
 			
