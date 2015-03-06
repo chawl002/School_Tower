@@ -3,12 +3,14 @@ using System.Collections;
 
 public class MoneyHandle : MonoBehaviour {
 
-	public int mon;
+	public int mon = 100;
 	public float timerf = 0;
 	public int timers = 0;
 	public int timerm = 0;
 	public bool victory = false;
 	public string LoadNext = "GameSelection";
+	public int MoneyAllowance = 100;
+	public int AllowanceInterval = 8;
 
 	public float temp = 0;
 	public int mtemp = 0;
@@ -18,7 +20,6 @@ public class MoneyHandle : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		muse = GameObject.Find("Musical");
-		mon = 150;
 	}
 	
 	// Update is called once per frame
@@ -44,9 +45,9 @@ public class MoneyHandle : MonoBehaviour {
 				}
 
 		temp += Time.deltaTime;
-		if ((temp-mtemp)%8 > 0) { //$1 given every 5 seconds
-						mtemp += 6;
-						mon += 100;
+		if ((temp-mtemp)%AllowanceInterval > 0) { //MoneyAllowance given every 5 seconds
+						mtemp += AllowanceInterval;
+						mon += MoneyAllowance;
 				}
 
 		if (timerm >= 3)

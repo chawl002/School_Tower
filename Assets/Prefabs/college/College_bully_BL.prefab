@@ -111,9 +111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {fileID: 400006, guid: 525399dbeb65844f48285dc8feb8d1bf, type: 2}
-  - {fileID: 400002, guid: 525399dbeb65844f48285dc8feb8d1bf, type: 2}
-  - {fileID: 400000, guid: 525399dbeb65844f48285dc8feb8d1bf, type: 2}
+  - {fileID: 491388, guid: 93726d698c73e5e44bf9d46f9becc133, type: 2}
+  - {fileID: 491384, guid: 93726d698c73e5e44bf9d46f9becc133, type: 2}
+  - {fileID: 491382, guid: 93726d698c73e5e44bf9d46f9becc133, type: 2}
   - {fileID: 400000, guid: 74dfbaccbfe7e449288ce7fbb82f6b15, type: 2}
   healthBar: {fileID: 0}
   cur: 0

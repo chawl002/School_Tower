@@ -14,7 +14,12 @@ public class EnemyHP : MonoBehaviour {
 
 		if (HP <= 0 && !dropmon) {
 					Vector3 pos = new Vector3(transform.position.x, transform.position.y, -0.2f);
-					Instantiate(Resources.Load("droppedmoney"), pos, transform.rotation);
+					if(Application.loadedLevel == 2) //ElementaryLevelOne
+						Instantiate(Resources.Load("E_droppedmoney"), pos, transform.rotation);
+					else if(Application.loadedLevel == 6) //HighschoolLevel
+						Instantiate(Resources.Load("H_droppedmoney"), pos, transform.rotation);
+					else if(Application.loadedLevel == 10) //CollegeLevel STILL NEED TO CHANGE VALUE!!
+						Instantiate(Resources.Load("H_droppedmoney"), pos, transform.rotation);
 					dropmon = true;
 				}
 
