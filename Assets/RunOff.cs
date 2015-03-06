@@ -4,18 +4,27 @@ using System.Collections;
 public class RunOff : MonoBehaviour {
 
 	public bool ranaway = false;
+	public AudioClip audity;
+	bool audioplay = false;
 
 	float temp = 0;
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		if (GetComponent<EnemyHP> ().HP <= 0) {
+
+						if(audioplay == false && audity)
+			{
+				audio.PlayOneShot(audity);
+				audioplay = true;
+			}
+						
 						temp += Time.deltaTime;
 
 						if (temp >= 0.75)
