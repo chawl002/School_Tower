@@ -15,11 +15,18 @@ public class HallMon : MonoBehaviour {
 		
 		visClone = Instantiate(vis, pos, transform.rotation) as GameObject; //Instantiate(tragedy);
 		visClone.transform.parent = gameObject.transform;
+
+		hasVision = true;
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (GetComponent<EnemyHP> ().HP >= 0 && hasVision) {
+			Destroy(visClone);
+			hasVision = false;
+				}
 		
 		
 		
