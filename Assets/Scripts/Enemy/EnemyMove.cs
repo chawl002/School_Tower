@@ -62,7 +62,8 @@ public class EnemyMove : MonoBehaviour {
 		if (transform.rotation.z != 0)
 			transform.rotation = Quaternion.identity;
 		// Waypoint not reached yet? then move closer
-		if (transform.position != waypoints [cur].position) {
+		if (transform.position.x != waypoints [cur].position.x || transform.position.y != waypoints [cur].position.y) {
+
 			Vector2 p = Vector2.MoveTowards (transform.position,
 			                                 waypoints [cur].position,
 			                                 speed);
@@ -79,6 +80,8 @@ public class EnemyMove : MonoBehaviour {
 		}
 		// Waypoint reached, select next one
 		else {
+
+			Debug.Log("reach this");
 
 			Vector2 currentWP;
 			Vector2 nextWP;
