@@ -9,16 +9,16 @@ GameObject:
   m_Component:
   - 4: {fileID: 496186}
   - 212: {fileID: 21200000}
-  - 61: {fileID: 6196698}
   - 114: {fileID: 11401612}
   - 114: {fileID: 11408286}
   - 114: {fileID: 11444996}
   - 114: {fileID: 11472470}
   - 114: {fileID: 11496186}
   - 212: {fileID: 21296186}
+  - 58: {fileID: 5823168}
   m_Layer: 0
   m_Name: BubbleGum
-  m_TagString: Untagged
+  m_TagString: tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,16 +35,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6196698
-BoxCollider2D:
-  m_ObjectHideFlags: 0
+--- !u!58 &5823168
+CircleCollider2D:
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196186}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 8, y: 11}
+  m_Radius: 3
   m_Center: {x: 0, y: 0}
 --- !u!114 &11401612
 MonoBehaviour:
