@@ -21,3 +21,5 @@ EditorBuildSettings:
     path: Assets/Scene/HighSchoolLevel.unity
   - enabled: 1
     path: Assets/Scene/ElementaryLevelOne.unity
+  - enabled: 1
+    path: Assets/Scene/CollegeLevel.unity
