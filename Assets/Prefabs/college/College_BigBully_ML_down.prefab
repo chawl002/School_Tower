@@ -117,7 +117,7 @@ MonoBehaviour:
   - {fileID: 400008, guid: ea5d3b48417ea423589b89b98d657271, type: 2}
   - {fileID: 400006, guid: ea5d3b48417ea423589b89b98d657271, type: 2}
   - {fileID: 400004, guid: ea5d3b48417ea423589b89b98d657271, type: 2}
-  - {fileID: 0}
+  - {fileID: 400000, guid: 525399dbeb65844f48285dc8feb8d1bf, type: 2}
   - {fileID: 400000, guid: 74dfbaccbfe7e449288ce7fbb82f6b15, type: 2}
   healthBar: {fileID: 0}
   cur: 0
