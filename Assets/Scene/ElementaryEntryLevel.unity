@@ -370,6 +370,7 @@ MonoBehaviour:
   deltapos: {x: 0, y: 0}
   damageval: .25
   speed: .0149999997
+  sspeed: .0149999997
   dir: {x: 0, y: 0}
 --- !u!114 &204630184
 MonoBehaviour:
@@ -1012,7 +1013,6 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -1042,6 +1042,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
+  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1256,7 +1257,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0

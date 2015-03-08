@@ -17,6 +17,8 @@ public class MoneyHandle : MonoBehaviour {
 	public GUIStyle guicust;
 	public GameObject muse;
 
+	public static int curLevel_win;
+
 	// Use this for initialization
 	void Start () {
 		muse = GameObject.Find("Musical");
@@ -50,8 +52,27 @@ public class MoneyHandle : MonoBehaviour {
 						mon += MoneyAllowance;
 				}
 
-		if (timerm >= 3)
-			Application.LoadLevel(LoadNext);
+		if (timerm >= 1 && Application.loadedLevelName == "ElementaryEntryLevel"){
+
+			curLevel_win = 0;
+			Application.LoadLevel("VictoryScene");
+		}
+		if (timerm >= 2 && Application.loadedLevelName == "ElementaryLevelOne"){
+
+			curLevel_win = 1;
+			Application.LoadLevel("VictoryScene");
+		}
+		if (timerm >= 3 && Application.loadedLevelName == "HighSchoolLevel"){
+
+			curLevel_win = 2;
+			Application.LoadLevel("VictoryScene");
+		}
+		if (timerm >= 3 && Application.loadedLevelName == "CollegeLevel"){
+
+			curLevel_win = 3;
+			Application.LoadLevel("VictoryScene");
+		}
+
 
 	}
 

@@ -4,13 +4,13 @@ using System.Collections;
 public class Menu : MonoBehaviour {
 	
 	public void GoPlay(){
-		Application.LoadLevel(1);
+		Application.LoadLevel("GameSelection");
 		}
 	public void GoInstruct(){
-		Application.LoadLevel (5);
+		Application.LoadLevel ("Instructions");
 	}
 	public void Restart()
 	{
-		Application.LoadLevel (0);
+		Application.LoadLevel ("OpeningTitle");
 	}
 }

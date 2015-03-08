@@ -16,6 +16,8 @@ public class EnemyMove : MonoBehaviour {
 	public float sspeed = 0.015f;
 
 	public Vector2 dir; //direction enemy is facing
+
+	public static int sceneLevel;
 	
 	void Start()
 	{
@@ -77,7 +79,20 @@ public class EnemyMove : MonoBehaviour {
 			healthBar.GetComponent<Image>().fillAmount -= damageval;
 			Destroy(this.gameObject);
 			if(healthBar.GetComponent<Image>().fillAmount == 0){
-				Application.LoadLevel(3);
+				if (Application.loadedLevelName == "ElementaryEntryLevel"){
+					sceneLevel = 0;
+				}
+				if (Application.loadedLevelName == "ElementaryLevelOne"){
+					sceneLevel = 1;
+				}
+				if (Application.loadedLevelName == "HighSchoolLevel"){
+					sceneLevel = 2;
+				}
+				if (Application.loadedLevelName == "CollegeLevel"){
+					sceneLevel = 3;
+				}
+				Application.LoadLevel("GameOver");
+
 			}
 		}
 		// Waypoint reached, select next one
