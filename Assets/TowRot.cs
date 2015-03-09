@@ -5,6 +5,9 @@ public class TowRot : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+
+		//GetComponent
 	
 	}
 	
