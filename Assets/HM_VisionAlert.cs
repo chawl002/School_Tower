@@ -15,6 +15,7 @@ public class HM_VisionAlert : MonoBehaviour {
 		
 		cen.x = transform.position.x;
 		cen.y = transform.position.y;
+
 		
 		Collider2D[] hitColliders = Physics2D.OverlapCircleAll (cen, 1.9f);//GetComponent<CircleCollider2D>().radius);
 		

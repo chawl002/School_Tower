@@ -23,10 +23,10 @@ public class HallMon : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (GetComponent<EnemyHP> ().HP >= 0 && hasVision) {
+		/*if (GetComponent<EnemyHP> ().HP >= 0 && hasVision) {
 			Destroy(visClone);
 			hasVision = false;
-				}
+				}*/
 		
 		
 		

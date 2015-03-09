@@ -38,6 +38,7 @@ public class EnemyMove : MonoBehaviour {
 
 		if (face.x * face.x >= face.y * face.y) {
 			if (face.x > 0) {
+				//GetComponent<SpriteRenderer>().transform.Rotate(0, 180, 0);
 				dir.x = 1;
 				dir.y = 0;
 			} else {
@@ -46,6 +47,7 @@ public class EnemyMove : MonoBehaviour {
 			}
 		} else {
 			if (face.y > 0) {
+				//GetComponent<SpriteRenderer>().transform.Rotate(0, 180, 0);
 				dir.y = 1;
 				dir.x = 0;
 			} else {
@@ -115,6 +117,7 @@ public class EnemyMove : MonoBehaviour {
 			
 			if (vect.x * vect.x >= vect.y * vect.y) {
 				if (vect.x > 0) {
+					//GetComponent<SpriteRenderer>().transform.Rotate(0, 180, 0);
 					dir.x = 1;
 					dir.y = 0;
 				} else {
@@ -123,6 +126,7 @@ public class EnemyMove : MonoBehaviour {
 				}
 			} else {
 				if (vect.y > 0) {
+					//GetComponent<SpriteRenderer>().transform.Rotate(0, 180, 0);
 					dir.y = 1;
 					dir.x = 0;
 				} else {
