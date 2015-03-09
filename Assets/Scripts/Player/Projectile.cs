@@ -10,6 +10,8 @@ public class Projectile : MonoBehaviour {
 	public GameObject proj;
 	public GameObject projClone;
 
+	public int interval = 2;
+
 
 	// Use this for initialization
 	void Start () {
@@ -36,6 +38,8 @@ public class Projectile : MonoBehaviour {
 			shoot_ud = 0f;
 		}
 
+		if (GetComponent<AssignWeap> ().ItemIndexInInventory == 0 || GetComponent<AssignWeap> ().ItemIndexInInventory == 5 || GetComponent<AssignWeap> ().ItemIndexInInventory == 6)
+						interval = 3;
 
 
 	}
@@ -44,7 +48,7 @@ public class Projectile : MonoBehaviour {
 	void Update () {
 
 		temp += Time.deltaTime;
-		if (temp >= 2) {
+		if (temp >= interval) {
 			//do projectile
 			temp = 0;
 			Vector3 pos = transform.position;
