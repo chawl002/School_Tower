@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.85000002, y: 2.95000005, z: -.00999999978}
-  m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
+  m_LocalScale: {x: 1.79999995, y: 1.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -60,7 +60,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: 4
+  m_Radius: .25
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -155,6 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa5cb051adb904eb7a87a2cf44c21d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  money: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -175,7 +177,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 549b10312073b43fa90e015380d98b7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7466e41624d8a4abb9213fd85c0f1842, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

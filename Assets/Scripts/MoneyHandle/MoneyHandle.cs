@@ -17,6 +17,8 @@ public class MoneyHandle : MonoBehaviour {
 	public GUIStyle guicust;
 	public GameObject muse;
 
+	public bool panic = false;
+
 	public static int curLevel_win;
 
 	// Use this for initialization
@@ -27,10 +29,15 @@ public class MoneyHandle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (mon <= 100)
-			muse.GetComponent<AudioSource> ().pitch = 1.5f;
-		else
-			muse.GetComponent<AudioSource> ().pitch = 1f;
+		if (mon <= 100 && !panic) {
+						muse.GetComponent<AudioSource> ().pitch = 1.5f;
+						panic = true;
+				}
+
+		if (panic && mon > 100) {
+						muse.GetComponent<AudioSource> ().pitch = 1f;
+						panic = false;
+				}
 
 
 		if(mon <= 0)

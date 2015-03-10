@@ -14,7 +14,7 @@ GameObject:
   - 58: {fileID: 5891480}
   - 82: {fileID: 8244796}
   m_Layer: 0
-  m_Name: BigF
+  m_Name: BiF
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
