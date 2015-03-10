@@ -95,10 +95,10 @@ public class Inventory : MonoBehaviour {
 			if(mappy.GetComponent<SpawnPaperboy> ().poop)
 			{
 				//If the tower has been placed, update global variables from the first item click
-				click = false;
+				/*click = false;
 				mappy.GetComponent<SpawnPaperboy> ().poop = false;
 				LastSpawnTower = SPAWNTOWER;
-				SPAWNTOWER = -1;
+				SPAWNTOWER = -1;*/
 
 			}
 			for(int y = 0; y < SlotY; y++)
