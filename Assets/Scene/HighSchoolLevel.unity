@@ -182,7 +182,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 460070, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 160070, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
       propertyPath: m_Name
@@ -211,6 +211,14 @@ Prefab:
     - target: {fileID: 11460068, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
       propertyPath: MoneyAllowance
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435686, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
+      propertyPath: Defeat
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435686, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
+      propertyPath: unlocked
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
@@ -294,7 +302,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!1 &138845938
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +428,7 @@ Transform:
   m_LocalScale: {x: .330000013, y: .330000013, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!114 &377891862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,7 +645,7 @@ Transform:
   - {fileID: 578353074}
   - {fileID: 1846322532}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1 &531529245
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +738,8 @@ GameObject:
   - 212: {fileID: 822607252}
   - 114: {fileID: 822607251}
   - 114: {fileID: 822607250}
+  - 114: {fileID: 822607254}
+  - 114: {fileID: 822607255}
   m_Layer: 0
   m_Name: money
   m_TagString: Untagged
@@ -868,6 +878,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &822607254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11429476, guid: 01c8528904b0d48d98353f8a28c021b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 93673336}
+  m_GameObject: {fileID: 822607249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acf2a9ed875e4307bad829abb45ddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musical: {fileID: 0}
+--- !u!114 &822607255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11435686, guid: 01c8528904b0d48d98353f8a28c021b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 93673336}
+  m_GameObject: {fileID: 822607249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0e15ce2fa744dada461d15ca1211b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Defeat: 0
+  unlocked: 0
+  inv: {fileID: 0}
 --- !u!1 &923756259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1176,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 202166761}
   m_GameObject: {fileID: 1058328233}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfde84a3d1bbd420b991a73894627d24, type: 3}
   m_Name: 
@@ -1212,7 +1250,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &1260197954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,6 +1393,8 @@ MonoBehaviour:
   inventory: []
   slots: []
   mappy: {fileID: 1603372039}
+  money: {fileID: 0}
+  unlocked: 0
 --- !u!4 &1455665421
 Transform:
   m_ObjectHideFlags: 0
@@ -1641,7 +1681,7 @@ Transform:
   m_LocalScale: {x: 3.75552559, y: 3.75552607, z: 3.75552607}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
 --- !u!1 &1634748033
 GameObject:
   m_ObjectHideFlags: 0

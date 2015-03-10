@@ -27,7 +27,7 @@ public class ProjPro : MonoBehaviour {
 
 		GetComponent<damage> ().damag = damage;
 
-		Debug.Log ("My damage is " + damage);
+		//Debug.Log ("My damage is " + damage);
 
 		money = GameObject.Find ("money");
 

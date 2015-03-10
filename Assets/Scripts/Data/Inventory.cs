@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -22,6 +22,9 @@ public class Inventory : MonoBehaviour {
 	private string tooltip; //The item details output when the mouse hovers the item in inventory
 
 	public GameObject mappy; //Used to get variables fro Spawn Paperboy
+	public GameObject money; //Money prefab in scene
+
+	public bool unlocked = false; //If Professor F unlocked
 
 	// Use this for initialization
 	void Start () 
@@ -36,6 +39,7 @@ public class Inventory : MonoBehaviour {
 		}
 		//Gets items from gameobjects with a specific tag
 		database = GameObject.FindGameObjectWithTag("Item Database").GetComponent<ItemDatabase>(); 
+		money = GameObject.Find ("money");
 
 		//Add in current items owned here:
 		AddItem (0);
@@ -45,6 +49,7 @@ public class Inventory : MonoBehaviour {
 		AddItem (4);
 		AddItem (5);
 		AddItem (6);
+		AddItem (7);
 	}
 
 	//makes the inventory appear and disappear when the button i is pressed
@@ -55,6 +60,9 @@ public class Inventory : MonoBehaviour {
 		{
 			showInventory = !showInventory;
 		}
+
+		if (money.GetComponent<FDefeated> ().unlocked == true)
+						unlocked = true;
 	}
 
 	//draws the inventory if the showInventory bool is true.
@@ -133,9 +141,12 @@ public class Inventory : MonoBehaviour {
 
 						if(Input.GetMouseButtonDown(0))
 						{
-							spot = slotRect; //position of item in inventory
-							click = true; 
-							SPAWNTOWER = slots[i].ItemID;
+							if(!(unlocked == false && i == 7))
+							{
+								spot = slotRect; //position of item in inventory
+								click = true; 
+								SPAWNTOWER = slots[i].ItemID;
+							}
 						}
 					}
 				}

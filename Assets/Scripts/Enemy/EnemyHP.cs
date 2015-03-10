@@ -12,6 +12,9 @@ public class EnemyHP : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (HP < 0)
+						HP = 0;
+
 		if (HP <= 0 && !dropmon) {
 			Debug.Log(Application.loadedLevel);
 					Vector3 pos = new Vector3(transform.position.x, transform.position.y, -0.2f);

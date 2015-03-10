@@ -326,7 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interval: 8
   decreaseInterval: 5
-  enemy1: {fileID: 100000, guid: c23ecb18664c44b2191cc79504d07d1b, type: 2}
+  enemy1: {fileID: 101244, guid: 05722ddf2bc38449d9489ca8563b232b, type: 2}
   enemy2: {fileID: 173324, guid: f4c50abfbe6d8464a96bef787f88585f, type: 2}
   enemy3: {fileID: 105962, guid: 6266278af16874963aef794db40e8de2, type: 2}
   enemy4: {fileID: 0}
@@ -361,6 +361,7 @@ GameObject:
   - 212: {fileID: 822607252}
   - 114: {fileID: 822607251}
   - 114: {fileID: 822607250}
+  - 114: {fileID: 822607254}
   m_Layer: 0
   m_Name: money
   m_TagString: Untagged
@@ -499,6 +500,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &822607254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11429476, guid: 01c8528904b0d48d98353f8a28c021b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 93673336}
+  m_GameObject: {fileID: 822607249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acf2a9ed875e4307bad829abb45ddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1020193104
 GameObject:
   m_ObjectHideFlags: 0

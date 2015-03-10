@@ -17,7 +17,7 @@ GameObject:
   - 114: {fileID: 11401244}
   - 114: {fileID: 11434230}
   m_Layer: 0
-  m_Name: ProfessorF
+  m_Name: EnemyProfessorF
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,6 +128,7 @@ MonoBehaviour:
   deltapos: {x: 0, y: 0}
   damageval: .25
   speed: .0149999997
+  sspeed: .0149999997
   dir: {x: 0, y: 0}
 --- !u!114 &11434230
 MonoBehaviour:
@@ -141,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ranaway: 0
+  aud_feet: {fileID: 0}
+  aud_pain: {fileID: 0}
 --- !u!212 &21201244
 SpriteRenderer:
   m_ObjectHideFlags: 1

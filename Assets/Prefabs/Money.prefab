@@ -11,6 +11,8 @@ GameObject:
   - 212: {fileID: 21260070}
   - 114: {fileID: 11460068}
   - 114: {fileID: 11460070}
+  - 114: {fileID: 11429476}
+  - 114: {fileID: 11435686}
   m_Layer: 0
   m_Name: Money
   m_TagString: Untagged
@@ -30,6 +32,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11429476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acf2a9ed875e4307bad829abb45ddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musical: {fileID: 0}
+--- !u!114 &11435686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0e15ce2fa744dada461d15ca1211b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Defeat: 0
+  unlocked: 0
+  inv: {fileID: 0}
 --- !u!114 &11460068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46,6 +74,9 @@ MonoBehaviour:
   timers: 0
   timerm: 0
   victory: 0
+  LoadNext: GameSelection
+  MoneyAllowance: 100
+  AllowanceInterval: 8
   temp: 0
   mtemp: 0
   guicust:
