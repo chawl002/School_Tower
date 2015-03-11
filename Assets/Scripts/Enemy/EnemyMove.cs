@@ -11,9 +11,9 @@ public class EnemyMove : MonoBehaviour {
 	public Vector2 deltapos;
 	public float damageval = 0.25f;
 	
-	public float speed = 0.015f;
+	public float speed = 0.005f;
 
-	public float sspeed = 0.015f;
+	public float sspeed = 0.005f;
 
 	public Vector2 dir; //direction enemy is facing
 
@@ -187,8 +187,11 @@ public class EnemyMove : MonoBehaviour {
 						GetComponent<EnemyHP> ().HP -= 1;
 						speed = speed / 1.25f;
 				}
+
 		
 	}
+
+
 	
 }
 

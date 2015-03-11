@@ -25,6 +25,7 @@ public class Inventory : MonoBehaviour {
 	public GameObject money; //Money prefab in scene
 
 	public bool unlocked = false; //If Professor F unlocked
+	public bool paused = false;
 
 	// Use this for initialization
 	void Start () 
@@ -49,12 +50,16 @@ public class Inventory : MonoBehaviour {
 		AddItem (4);
 		AddItem (5);
 		AddItem (6);
-		AddItem (7);
+		//AddItem (7);
 	}
 
 	//makes the inventory appear and disappear when the button i is pressed
 	void Update()
 	{
+		if (unlocked)
+						AddItem (7);
+
+
 		//if the user presses i, inventory hides
 		if(Input.GetButtonDown("Inventory"))
 		{
@@ -88,92 +93,86 @@ public class Inventory : MonoBehaviour {
 	//Determines if an item is clicked or not and returns global variables for SpawnPaperboy.cs to use for tower instanciation
 	void DrawIventory()
 	{
-		int i = 0;
-		for (int x = 0; x < SlotX; x++) 
-		{
-			//Poop is a global variable from SpawnPaperBoy that determines if the tower has been placed
-			if(mappy.GetComponent<SpawnPaperboy> ().poop)
-			{
-				//If the tower has been placed, update global variables from the first item click
-				/*click = false;
+		if (Time.timeScale != 0) {
+						int i = 0;
+						for (int x = 0; x < SlotX; x++) {
+								//Poop is a global variable from SpawnPaperBoy that determines if the tower has been placed
+								if (mappy.GetComponent<SpawnPaperboy> ().poop) {
+										//If the tower has been placed, update global variables from the first item click
+										/*click = false;
 				mappy.GetComponent<SpawnPaperboy> ().poop = false;
 				LastSpawnTower = SPAWNTOWER;
 				SPAWNTOWER = -1;*/
 
-			}
-			for(int y = 0; y < SlotY; y++)
-			{
-				//Rectangle object for slots
-				Rect slotRect = new Rect(x*55, y*55, 50, 50);
-				GUI.Box (slotRect, "", skin.GetStyle("slot")); //Color slots with skin
-				slots[i] = inventory[i];//have a copy of inventory
+								}
+								for (int y = 0; y < SlotY; y++) {
+										//Rectangle object for slots
+										Rect slotRect = new Rect (x * 55, y * 55, 50, 50);
+										GUI.Box (slotRect, "", skin.GetStyle ("slot")); //Color slots with skin
+										slots [i] = inventory [i];//have a copy of inventory
 
-				if(slots[i].ItemName != null) //If there is an item
-				{
-					if(!click)
-					{
-						//Draw the item normally
-						GUI.DrawTexture(slotRect, slots[i].ItemIcon);
-					}
-					else //If the user clicked on the item, highlight it blue
-					{
-						if(SPAWNTOWER != slots[i].ItemID)
-						{
-							//make sure other items in inventory do not turn blue - only the clicked object should
-							GUI.DrawTexture(slotRect, slots[i].ItemIcon);
+										if (slots [i].ItemName != null) { //If there is an item
+												if (!click) {
+														//Draw the item normally
+														GUI.DrawTexture (slotRect, slots [i].ItemIcon);
+												} else { //If the user clicked on the item, highlight it blue
+														if (SPAWNTOWER != slots [i].ItemID) {
+																//make sure other items in inventory do not turn blue - only the clicked object should
+																GUI.DrawTexture (slotRect, slots [i].ItemIcon);
+														} else {
+																//Highlight blue
+																Texture2D highlight_texture = Resources.Load<Texture2D> (slots [SPAWNTOWER].ItemName + "_Highlight");
+																GUI.DrawTextureWithTexCoords (spot, highlight_texture, new Rect (0f, 0f, 1f, 1f));
+														}
+												}
+
+												//if(!paused)
+												//if the mouse is hovered over it, display information from createtooltip info
+												if (slotRect.Contains (Event.current.mousePosition)) {
+														//output item information
+														tooltip = CreateToolTip (slots [i]);
+														showToolTip = true;
+
+														//If there is a click, change global variables for SpawnPaperBoy to access
+
+														if (Input.GetMouseButtonDown (0)) {
+																//Debug.Log (GetComponent<Pause>().pause);
+																//if(!paused)
+																{
+																		//	Debug.Log("KING");
+																		if (!(unlocked == false && i == 7)) {
+																				if (i == 0 && money.GetComponent<KeepTrack> ().Gum == 1)
+																						break;
+																				if (i == 1 && money.GetComponent<KeepTrack> ().Pap == 1)
+																						break;
+																				if (i == 2 && money.GetComponent<KeepTrack> ().Bas == 1)
+																						break;
+																				if (i == 3 && money.GetComponent<KeepTrack> ().Dog == 1)
+																						break;
+																				if (i == 4 && money.GetComponent<KeepTrack> ().Pla == 1)
+																						break;
+																				if (i == 5 && money.GetComponent<KeepTrack> ().Can == 1)
+																						break;
+																				if (i == 6 && money.GetComponent<KeepTrack> ().Tac == 1)
+																						break;
+																				if (i == 7 && money.GetComponent<KeepTrack> ().Eff == 1)
+																						break;
+																				spot = slotRect; //position of item in inventory
+																				click = true; 
+																				SPAWNTOWER = slots [i].ItemID;
+																		}
+																}
+														}
+												}
+										}
+										//reset item information
+										if (tooltip == "") {
+												showToolTip = false;
+										}
+										i++;
+								}
 						}
-						else
-						{
-							//Highlight blue
-							Texture2D highlight_texture = Resources.Load<Texture2D>(slots[SPAWNTOWER].ItemName+"_Highlight");
-							GUI.DrawTextureWithTexCoords(spot, highlight_texture, new Rect(0f, 0f, 1f, 1f));
-						}
-					}
-
-					//if the mouse is hovered over it, display information from createtooltip info
-					if(slotRect.Contains (Event.current.mousePosition))
-					{
-						//output item information
-						tooltip = CreateToolTip(slots[i]);
-						showToolTip = true;
-
-						//If there is a click, change global variables for SpawnPaperBoy to access
-
-						if(Input.GetMouseButtonDown(0))
-						{
-							if(!(unlocked == false && i == 7))
-							{
-								if(i == 0 && money.GetComponent<KeepTrack>().Gum == 1)
-									break;
-								if(i == 1 && money.GetComponent<KeepTrack>().Pap == 1)
-									break;
-								if(i == 2 && money.GetComponent<KeepTrack>().Bas == 1)
-									break;
-								if(i == 3 && money.GetComponent<KeepTrack>().Dog == 1)
-									break;
-								if(i == 4 && money.GetComponent<KeepTrack>().Pla == 1)
-									break;
-								if(i == 5 && money.GetComponent<KeepTrack>().Can == 1)
-									break;
-								if(i == 6 && money.GetComponent<KeepTrack>().Tac == 1)
-									break;
-								if(i == 7 && money.GetComponent<KeepTrack>().Eff == 1)
-									break;
-								spot = slotRect; //position of item in inventory
-								click = true; 
-								SPAWNTOWER = slots[i].ItemID;
-							}
-						}
-					}
 				}
-				//reset item information
-				if(tooltip == "")
-				{
-					showToolTip = false;
-				}
-				i++;
-			}
-		}
 	}
 
 	//Creation of the info in the hoverable info box

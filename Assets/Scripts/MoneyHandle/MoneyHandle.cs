@@ -66,7 +66,7 @@ public class MoneyHandle : MonoBehaviour {
 			currentLevel = curLevel_win + 1;
 			Application.LoadLevel("VictoryScene");
 		}
-		if (timerm >= 2 && Application.loadedLevelName == "ElementaryLevelOne"){
+		if (timerm >= 3 && Application.loadedLevelName == "ElementaryLevelOne"){
 
 			curLevel_win = 1;
 			currentLevel = curLevel_win + 1;

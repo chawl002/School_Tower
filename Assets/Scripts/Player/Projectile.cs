@@ -19,8 +19,8 @@ public class Projectile : MonoBehaviour {
 			shoot_lr = 0f;											// the next tower created will shoot up
 			shoot_ud = 1f;
 
-			//GetComponent<Transform>().Rotate(0,180, 0);
-			GetComponent<SpriteRenderer>().transform.Rotate(0, 180, 0);
+			GetComponent<Transform>().Rotate(0,180, 0);
+			//GetComponent<SpriteRenderer>().transform.Rotate(0, 180, 0);
 		}
 
 		else if(Input.GetKey ("down") || Input.GetKey("s") ){		// if the down arrow key or s is pressed then

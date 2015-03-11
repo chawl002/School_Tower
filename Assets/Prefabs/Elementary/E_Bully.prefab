@@ -72,7 +72,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ranaway: 0
-  audity: {fileID: 8300000, guid: 8b36b9949df47484585d830b669860b7, type: 3}
+  aud_feet: {fileID: 0}
+  aud_pain: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,7 +115,8 @@ MonoBehaviour:
   lastpos: {x: 0, y: 0}
   deltapos: {x: 0, y: 0}
   damageval: .25
-  speed: .0149999997
+  speed: .0109999999
+  sspeed: .0109999999
   dir: {x: 0, y: 0}
 --- !u!114 &11400006
 MonoBehaviour:

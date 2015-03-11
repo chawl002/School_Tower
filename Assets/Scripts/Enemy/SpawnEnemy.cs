@@ -58,7 +58,7 @@ public class SpawnEnemy : MonoBehaviour {
 			
 			// reset time
 			timeLeft = interval;
-			decreaseIntervalTmp -= 1.0f;
+			decreaseIntervalTmp -= 0.5f;
 			if(decreaseIntervalTmp <= 0f){
 				if(interval > 1.0f){
 					interval -= 1.0f;

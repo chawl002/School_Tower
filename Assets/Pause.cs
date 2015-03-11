@@ -20,17 +20,21 @@ public class Pause : MonoBehaviour {
 		
 						if (Time.timeScale == 1) {
 								Time.timeScale = 0;
-				musical.GetComponent<AudioSource>().volume = 0.3f;
-				musical.GetComponent<AudioSource>().pitch = musical.GetComponent<AudioSource>().pitch/1.5f;
-				pause = true;
+								musical.GetComponent<AudioSource>().volume = 0.3f;
+								musical.GetComponent<AudioSource>().pitch = musical.GetComponent<AudioSource>().pitch/1.5f;
+								pause = true;
+
+
 								
 						}
 
 						else {
 								Time.timeScale = 1;
-				musical.GetComponent<AudioSource>().volume = 1f;
-				musical.GetComponent<AudioSource>().pitch = musical.GetComponent<AudioSource>().pitch*1.5f;
-				pause = false;
+								musical.GetComponent<AudioSource>().volume = 1f;
+								musical.GetComponent<AudioSource>().pitch = musical.GetComponent<AudioSource>().pitch*1.5f;
+								pause = false;
+
+
 						}
 				}
 		}

@@ -326,7 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interval: 8
   decreaseInterval: 5
-  enemy1: {fileID: 187734, guid: c7bd372c89d3d47c6841c75ba9dc7992, type: 2}
+  enemy1: {fileID: 100000, guid: c23ecb18664c44b2191cc79504d07d1b, type: 2}
   enemy2: {fileID: 173324, guid: f4c50abfbe6d8464a96bef787f88585f, type: 2}
   enemy3: {fileID: 105962, guid: 6266278af16874963aef794db40e8de2, type: 2}
   enemy4: {fileID: 0}

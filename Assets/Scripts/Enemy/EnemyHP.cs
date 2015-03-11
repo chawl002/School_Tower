@@ -62,4 +62,9 @@ public class EnemyHP : MonoBehaviour {
 		Physics2D.IgnoreCollision (coll.gameObject.collider2D, collider2D);
 	}
 
+	void OnCollisionEnter2D(Collision2D coll)
+	{
+		Physics2D.IgnoreCollision (coll.gameObject.collider2D, collider2D);
+	}
+
 }

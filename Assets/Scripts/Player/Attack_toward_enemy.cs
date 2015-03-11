@@ -10,10 +10,10 @@ public class Attack_toward_enemy : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		money = GameObject.Find ("money");
-		if (money.GetComponent<MoneyHandle> ().mon - 15 < 0)
+		if (money.GetComponent<MoneyHandle> ().mon - 35 < 0)
 			Destroy (gameObject);
 		else
-			money.GetComponent<MoneyHandle>().mon -= 15;
+			money.GetComponent<MoneyHandle>().mon -= 35;
 	}
 	
 	// Update is called once per frame

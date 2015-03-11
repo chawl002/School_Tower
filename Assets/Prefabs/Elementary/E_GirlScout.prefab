@@ -160,7 +160,8 @@ MonoBehaviour:
   lastpos: {x: 0, y: 0}
   deltapos: {x: 0, y: 0}
   damageval: .25
-  speed: .0149999997
+  speed: .0109999999
+  sspeed: .0109999999
   dir: {x: 0, y: 0}
 --- !u!114 &11473320
 MonoBehaviour:
