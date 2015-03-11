@@ -9,15 +9,15 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 114: {fileID: 11400008}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400008}
   - 50: {fileID: 5000000}
   - 58: {fileID: 5800000}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: College_Researcher_MR_down
+  m_Name: College_Crammer_BL
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,8 +30,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0399999991, y: 3.11999989, z: -.00999999978}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_LocalPosition: {x: -2.45000005, y: -1.41999996, z: -.00999999978}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,9 +59,20 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .400000006
+  m_Radius: .300000012
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b833a72302e42519d7564e9e529b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,18 +86,6 @@ MonoBehaviour:
   ranaway: 0
   aud_feet: {fileID: 0}
   aud_pain: {fileID: 0}
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d271325849384dce8a567de4b876648, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ranaway: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,30 +109,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e4844fefa62f466aac154f637e0586d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 4
---- !u!114 &11400008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f89c49219388e754788f68d5d0a41ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {fileID: 400010, guid: 77398f840da164941a5d71c8a924a5b2, type: 2}
-  - {fileID: 400014, guid: 77398f840da164941a5d71c8a924a5b2, type: 2}
-  - {fileID: 400012, guid: 77398f840da164941a5d71c8a924a5b2, type: 2}
-  - {fileID: 400016, guid: 77398f840da164941a5d71c8a924a5b2, type: 2}
-  - {fileID: 400000, guid: 77398f840da164941a5d71c8a924a5b2, type: 2}
-  - {fileID: 400004, guid: 77398f840da164941a5d71c8a924a5b2, type: 2}
-  - {fileID: 400002, guid: 0f8f31d12c45e4eaba31fe25c4259f18, type: 2}
-  - {fileID: 400000, guid: 0f8f31d12c45e4eaba31fe25c4259f18, type: 2}
+  - {fileID: 400006, guid: 525399dbeb65844f48285dc8feb8d1bf, type: 2}
+  - {fileID: 400002, guid: 525399dbeb65844f48285dc8feb8d1bf, type: 2}
+  - {fileID: 400000, guid: 525399dbeb65844f48285dc8feb8d1bf, type: 2}
+  - {fileID: 400010, guid: 525399dbeb65844f48285dc8feb8d1bf, type: 2}
   healthBar: {fileID: 0}
   cur: 0
   lastpos: {x: 0, y: 0}
@@ -142,6 +125,18 @@ MonoBehaviour:
   speed: .0149999997
   sspeed: .0149999997
   dir: {x: 0, y: 0}
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e4844fefa62f466aac154f637e0586d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 4
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -162,7 +157,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51aa7ab08a6f744e0b1d3eab32cf8afa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c160e8ba2e59149908ce9d3e7256b07f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

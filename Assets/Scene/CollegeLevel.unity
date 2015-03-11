@@ -369,7 +369,7 @@ MonoBehaviour:
   enemy1: {fileID: 100000, guid: eba70464afb8e47ea96921b98a27092e, type: 2}
   enemy2: {fileID: 100000, guid: 45309884673454af98d4502e712a146d, type: 2}
   enemy3: {fileID: 100000, guid: 3263d5ea65aa64e03aab1af65c440291, type: 2}
-  enemy4: {fileID: 100000, guid: dfce5a8db8e8b4ef49f51f2538ec692e, type: 2}
+  enemy4: {fileID: 100000, guid: 042bdde724b3642b9853b1bad09dad14, type: 2}
   enemy5: {fileID: 100000, guid: 6e696c8a57e7c4c608128be128b3baad, type: 2}
   enemy6: {fileID: 100000, guid: 2baf9524861fd4462a3a3ff9f75d0dc1, type: 2}
   spawn1: 100
@@ -420,14 +420,14 @@ MonoBehaviour:
   interval: 22
   decreaseInterval: 3
   enemy1: {fileID: 100000, guid: 874214765415a49dc8492c718bdfb9fd, type: 2}
-  enemy2: {fileID: 100000, guid: 942ea69f16d184bef81620f168a45929, type: 2}
-  enemy3: {fileID: 100000, guid: 4947ada6986a84da3970064d014c21b7, type: 2}
-  enemy4: {fileID: 100000, guid: e52850d5bee114d5d9d06454c2f7f788, type: 2}
+  enemy2: {fileID: 100000, guid: 4947ada6986a84da3970064d014c21b7, type: 2}
+  enemy3: {fileID: 100000, guid: e52850d5bee114d5d9d06454c2f7f788, type: 2}
+  enemy4: {fileID: 0}
   enemy5: {fileID: 0}
   enemy6: {fileID: 0}
   spawn1: 100
-  spawn2: 10
-  spawn3: 20
+  spawn2: 80
+  spawn3: 80
   spawn4: 50
   spawn5: 50
   spawn6: 0
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   enemy2: {fileID: 100000, guid: bc9909225d27a4559ac02a00608fbf00, type: 2}
   enemy3: {fileID: 100000, guid: 1f877682a81294933852b4f039c18f11, type: 2}
   enemy4: {fileID: 100000, guid: cb6f8eec78cec4c6b8585dab1ac585b8, type: 2}
-  enemy5: {fileID: 100000, guid: 37032bb1dc97243468b1053ac0e7bf55, type: 2}
+  enemy5: {fileID: 100000, guid: a6867fc4e8c5d4f428c34f0d63d4e877, type: 2}
   enemy6: {fileID: 100000, guid: ded359c00114d43e487b17e14e9645b2, type: 2}
   spawn1: 100
   spawn2: 10
@@ -1076,14 +1076,14 @@ MonoBehaviour:
   interval: 20
   decreaseInterval: 3
   enemy1: {fileID: 100000, guid: 520a197478f1b4f2b9492547f744f7d3, type: 2}
-  enemy2: {fileID: 100000, guid: 016453ac81b85498fbb047dc4eaf96df, type: 2}
-  enemy3: {fileID: 100000, guid: b58fb8b492085401d99d82b0a5ec0e6e, type: 2}
-  enemy4: {fileID: 100000, guid: 958041ed3cb2f4e9593c4f0af9203b63, type: 2}
+  enemy2: {fileID: 100000, guid: b58fb8b492085401d99d82b0a5ec0e6e, type: 2}
+  enemy3: {fileID: 100000, guid: 958041ed3cb2f4e9593c4f0af9203b63, type: 2}
+  enemy4: {fileID: 0}
   enemy5: {fileID: 0}
   enemy6: {fileID: 0}
   spawn1: 100
-  spawn2: 10
-  spawn3: 20
+  spawn2: 80
+  spawn3: 80
   spawn4: 50
   spawn5: 0
   spawn6: 0
@@ -1129,14 +1129,14 @@ MonoBehaviour:
   interval: 22
   decreaseInterval: 3
   enemy1: {fileID: 100000, guid: b4b1009812980416b9f1908e91529c1f, type: 2}
-  enemy2: {fileID: 100000, guid: 047c8ed44e45f4a9eac90ae2217f9000, type: 2}
-  enemy3: {fileID: 100000, guid: fc15b33dcae884888b1e22dddd602a75, type: 2}
-  enemy4: {fileID: 100000, guid: 24dfa50e4afda4ef5af40d630f21daf7, type: 2}
+  enemy2: {fileID: 100000, guid: fc15b33dcae884888b1e22dddd602a75, type: 2}
+  enemy3: {fileID: 100000, guid: 24dfa50e4afda4ef5af40d630f21daf7, type: 2}
+  enemy4: {fileID: 0}
   enemy5: {fileID: 0}
   enemy6: {fileID: 0}
   spawn1: 100
-  spawn2: 10
-  spawn3: 20
+  spawn2: 80
+  spawn3: 80
   spawn4: 50
   spawn5: 50
   spawn6: 0
@@ -1267,8 +1267,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .844701946, y: .307257235}
-  m_Center: {x: -.588948846, y: -.431940466}
+  m_Size: {x: .82927382, y: .307257235}
+  m_Center: {x: -.596662879, y: -.431940466}
 --- !u!61 &1603372042
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1289,8 +1289,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .612562954, y: .600424409}
-  m_Center: {x: -1.63368964, y: -.256819278}
+  m_Size: {x: .612562954, y: .5517959}
+  m_Center: {x: -1.63368964, y: -.281133682}
 --- !u!61 &1603372044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1300,8 +1300,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .307475239, y: 1.44332385}
-  m_Center: {x: -3.29531693, y: -.697162151}
+  m_Size: {x: .276619047, y: 1.44332385}
+  m_Center: {x: -3.310745, y: -.697162151}
 --- !u!61 &1603372045
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1311,8 +1311,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .574050605, y: .534988523}
-  m_Center: {x: -3.14796638, y: -1.17718422}
+  m_Size: {x: .543193042, y: .486359894}
+  m_Center: {x: -3.16339302, y: -1.2014991}
 --- !u!61 &1603372046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1322,8 +1322,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .595186591, y: .553882897}
-  m_Center: {x: -1.64531493, y: .615320385}
+  m_Size: {x: .595186412, y: .505254626}
+  m_Center: {x: -1.64531434, y: .639634907}
 --- !u!61 &1603372047
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1388,8 +1388,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .542359769, y: .643287659}
-  m_Center: {x: -3.13295317, y: 1.49585736}
+  m_Size: {x: .542360008, y: .546031654}
+  m_Center: {x: -3.13295317, y: 1.54448676}
 --- !u!61 &1603372053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1399,8 +1399,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .284614831, y: 1.46291554}
-  m_Center: {x: -3.29267788, y: 1.08604538}
+  m_Size: {x: .269186884, y: 1.46291554}
+  m_Center: {x: -3.30039191, y: 1.08604538}
 --- !u!212 &1603372054
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1455,8 +1455,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 5.09490395, y: 1.41219461}
-  m_Center: {x: -.00771304546, y: -1.62906718}
+  m_Size: {x: 5.00233459, y: 1.41219473}
+  m_Center: {x: .00771518238, y: -1.62906754}
 --- !u!61 &1603372058
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1466,8 +1466,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .605331063, y: .585506439}
-  m_Center: {x: 3.14732933, y: -1.18330288}
+  m_Size: {x: .605328918, y: .585506558}
+  m_Center: {x: 3.14732814, y: -1.183303}
 --- !u!61 &1603372059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1500,7 +1500,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: .559049547, y: .569297194}
-  m_Center: {x: 1.65851748, y: -.283670098}
+  m_Center: {x: 1.65851712, y: -.283670098}
 --- !u!61 &1603372062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1510,8 +1510,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .589902818, y: .617928028}
-  m_Center: {x: 1.65851462, y: .615964711}
+  m_Size: {x: .589902818, y: .585509241}
+  m_Center: {x: 1.65851462, y: .632174253}
 --- !u!61 &1603372063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1521,8 +1521,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .883034527, y: .293736011}
-  m_Center: {x: .617119372, y: -.421451777}
+  m_Size: {x: .883034468, y: .277526289}
+  m_Center: {x: .617119372, y: -.413346916}
 --- !u!61 &1603372064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1532,8 +1532,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .898461938, y: .309942901}
-  m_Center: {x: .609406054, y: .786166072}
+  m_Size: {x: .898461938, y: .29373315}
+  m_Center: {x: .609406054, y: .778061211}
 --- !u!61 &1603372065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1543,8 +1543,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .605329037, y: 1.47703624}
-  m_Center: {x: .74054426, y: .170199215}
+  m_Size: {x: .574472785, y: 1.47703624}
+  m_Center: {x: .7405442, y: .170199215}
 --- !u!61 &1603372066
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1669,14 +1669,14 @@ MonoBehaviour:
   interval: 20
   decreaseInterval: 3
   enemy1: {fileID: 100000, guid: b72650577e1074fe9a4bb3ad288689a1, type: 2}
-  enemy2: {fileID: 100000, guid: 27be8758d3bfd4611931fa772a9c04b3, type: 2}
-  enemy3: {fileID: 100000, guid: cae6c1a7d3be6472ebb5eda5c9a28893, type: 2}
-  enemy4: {fileID: 100000, guid: 419c4cbf7e81844de820043adaf8d078, type: 2}
+  enemy2: {fileID: 100000, guid: cae6c1a7d3be6472ebb5eda5c9a28893, type: 2}
+  enemy3: {fileID: 100000, guid: 419c4cbf7e81844de820043adaf8d078, type: 2}
+  enemy4: {fileID: 0}
   enemy5: {fileID: 0}
   enemy6: {fileID: 0}
   spawn1: 100
-  spawn2: 10
-  spawn3: 20
+  spawn2: 80
+  spawn3: 80
   spawn4: 50
   spawn5: 0
   spawn6: 0
@@ -1895,7 +1895,7 @@ MonoBehaviour:
   enemy2: {fileID: 100000, guid: b6ea249c0b06e40afa7db92a663a2426, type: 2}
   enemy3: {fileID: 100000, guid: 0912ba57882dc49b0a6c27f015672f1f, type: 2}
   enemy4: {fileID: 100000, guid: 759aabb2ffd91482c86cc251305b113e, type: 2}
-  enemy5: {fileID: 100000, guid: c352bb0ccff284b47b58b8f16381b5c6, type: 2}
+  enemy5: {fileID: 100000, guid: 6f63ccf4f9ad44d6cb459319b815e092, type: 2}
   enemy6: {fileID: 100000, guid: 1b05287fe60794e05b9877a320a46633, type: 2}
   spawn1: 100
   spawn2: 10
