@@ -9,6 +9,9 @@ public class Menu : MonoBehaviour {
 	public void GoInstruct(){
 		Application.LoadLevel ("Instructions");
 	}
+	public void GoCredit(){
+		Application.LoadLevel ("Credits");
+	}
 	public void Restart()
 	{
 		Application.LoadLevel ("OpeningTitle");
