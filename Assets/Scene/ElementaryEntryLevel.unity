@@ -196,7 +196,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!114 &171675380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,7 +528,7 @@ Transform:
   m_LocalScale: {x: .330000013, y: .330000013, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!114 &377891862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,6 +810,7 @@ GameObject:
   - 114: {fileID: 822607250}
   - 114: {fileID: 822607255}
   - 114: {fileID: 822607254}
+  - 114: {fileID: 822607256}
   m_Layer: 0
   m_Name: money
   m_TagString: Untagged
@@ -978,6 +979,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musical: {fileID: 0}
   pause: 0
+--- !u!114 &822607256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11473306, guid: 01c8528904b0d48d98353f8a28c021b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 93673336}
+  m_GameObject: {fileID: 822607249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89445db596eb4466fb921ee7d89d5979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gum: 0
+  Pap: 0
+  Bas: 0
+  Dog: 0
+  Pla: 0
+  Can: 0
+  Tac: 0
+  Eff: 0
 --- !u!1 &1020193104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1070,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1001 &1122683746
 Prefab:
   m_ObjectHideFlags: 0
@@ -1137,7 +1158,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &1260197954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,7 +1232,7 @@ RectTransform:
   m_LocalScale: {x: .020790631, y: .020790631, z: .020790631}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 3.30999994, y: -5.73000002}
@@ -1609,7 +1630,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1001 &2058243385
 Prefab:
   m_ObjectHideFlags: 0

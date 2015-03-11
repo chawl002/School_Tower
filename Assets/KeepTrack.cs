@@ -3,7 +3,7 @@ using System.Collections;
 
 public class KeepTrack : MonoBehaviour {
 
-	int Gum, Pap, Bas, Dog, Pla, Can, Tac, Eff;
+	public int Gum, Pap, Bas, Dog, Pla, Can, Tac, Eff;
 
 	// Use this for initialization
 	void Start () {

@@ -5,6 +5,8 @@ public class DestroyOnClick : MonoBehaviour {
 		
 	bool fclick = false;
 
+	public bool BLOCK = false;
+
 	float temp = 0;
 
 	// Use this for initialization
@@ -53,12 +55,14 @@ public class DestroyOnClick : MonoBehaviour {
 	void OnMouseOver() {
 		//If unit is clicked, destroy it
 
-		if (Input.GetMouseButtonDown (0) && fclick == false) {
-						fclick = true;
-				} 
-		else if (Input.GetMouseButtonDown(0) && fclick == true) {
+		if (!BLOCK) {
+
+						if (Input.GetMouseButtonDown (0) && fclick == false) {
+								fclick = true;
+						} else if (Input.GetMouseButtonDown (0) && fclick == true) {
 	
-						Destroy(gameObject);
+								Destroy (gameObject);
+						}
 				}
 	}
 }

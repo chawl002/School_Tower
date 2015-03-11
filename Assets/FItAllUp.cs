@@ -3,14 +3,16 @@ using System.Collections;
 
 public class FItAllUp : MonoBehaviour {
 
-	//public GameObject moni;
+	public GameObject moni;
 	int weap = -1;
-	
+
+
+
 	// Use this for initialization
 	void Start () {
 
 
-		//moni = GameObject.Find ("money");
+		moni = GameObject.Find ("money");
 		
 	}
 	
@@ -35,6 +37,25 @@ public class FItAllUp : MonoBehaviour {
 				Destroy(hitColliders[i].gameObject);
 
 				Destroy(gameObject);
+
+				if(i == 0)
+					moni.GetComponent<KeepTrack>().Gum = 1;
+				if(i == 1)
+					moni.GetComponent<KeepTrack>().Pap = 1;
+				if(i == 2)
+					moni.GetComponent<KeepTrack>().Bas = 1;
+				if(i == 3)
+					moni.GetComponent<KeepTrack>().Dog = 1;
+				if(i == 4)
+					moni.GetComponent<KeepTrack>().Pla = 1;
+				if(i == 5)
+					moni.GetComponent<KeepTrack>().Can = 1;
+				if(i == 6)
+					moni.GetComponent<KeepTrack>().Tac = 1;
+				if(i == 7)
+					moni.GetComponent<KeepTrack>().Eff = 1;
+
+
 			}
 			
 		}

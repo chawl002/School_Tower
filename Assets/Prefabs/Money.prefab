@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11460070}
   - 114: {fileID: 11429476}
   - 114: {fileID: 11435686}
+  - 114: {fileID: 11473306}
   m_Layer: 0
   m_Name: Money
   m_TagString: Untagged
@@ -44,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musical: {fileID: 0}
+  pause: 0
 --- !u!114 &11435686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -139,6 +141,7 @@ MonoBehaviour:
     m_StretchWidth: 0
     m_StretchHeight: 0
   muse: {fileID: 0}
+  panic: 0
 --- !u!114 &11460070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,6 +155,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camx: 0
   camy: 0
+--- !u!114 &11473306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89445db596eb4466fb921ee7d89d5979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21260070
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -11,6 +11,9 @@ public class SpawnPaperboy : MonoBehaviour {
 	public GameObject Inv; // = GameObject.Find("Intentory");
 	public GameObject Id; // = GameObject.Find("Item Database");
 
+	//public int thresh = 10;
+	//public int count = 0;
+
 	// Use this for initialization
 	void Start () {
 		Inv = GameObject.Find("Inventory");

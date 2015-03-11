@@ -143,6 +143,22 @@ public class Inventory : MonoBehaviour {
 						{
 							if(!(unlocked == false && i == 7))
 							{
+								if(i == 0 && money.GetComponent<KeepTrack>().Gum == 1)
+									break;
+								if(i == 1 && money.GetComponent<KeepTrack>().Pap == 1)
+									break;
+								if(i == 2 && money.GetComponent<KeepTrack>().Bas == 1)
+									break;
+								if(i == 3 && money.GetComponent<KeepTrack>().Dog == 1)
+									break;
+								if(i == 4 && money.GetComponent<KeepTrack>().Pla == 1)
+									break;
+								if(i == 5 && money.GetComponent<KeepTrack>().Can == 1)
+									break;
+								if(i == 6 && money.GetComponent<KeepTrack>().Tac == 1)
+									break;
+								if(i == 7 && money.GetComponent<KeepTrack>().Eff == 1)
+									break;
 								spot = slotRect; //position of item in inventory
 								click = true; 
 								SPAWNTOWER = slots[i].ItemID;
