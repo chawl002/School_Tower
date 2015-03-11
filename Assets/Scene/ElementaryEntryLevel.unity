@@ -73,6 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+    tileSizeHint: 0
   m_NavMesh: {fileID: 19400000, guid: 2d85cd48fdfef604189f0f6f29e4c5dc, type: 2}
 --- !u!1001 &93673336
 Prefab:
@@ -683,6 +684,8 @@ GameObject:
   - 212: {fileID: 822607252}
   - 114: {fileID: 822607251}
   - 114: {fileID: 822607250}
+  - 114: {fileID: 822607255}
+  - 114: {fileID: 822607254}
   m_Layer: 0
   m_Name: money
   m_TagString: Untagged
@@ -786,6 +789,7 @@ MonoBehaviour:
     m_StretchWidth: 0
     m_StretchHeight: 0
   muse: {fileID: 0}
+  panic: 0
 --- !u!212 &822607252
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -821,6 +825,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &822607254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11435686, guid: 01c8528904b0d48d98353f8a28c021b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 93673336}
+  m_GameObject: {fileID: 822607249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0e15ce2fa744dada461d15ca1211b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Defeat: 0
+  unlocked: 0
+  inv: {fileID: 0}
+--- !u!114 &822607255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11429476, guid: 01c8528904b0d48d98353f8a28c021b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 93673336}
+  m_GameObject: {fileID: 822607249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acf2a9ed875e4307bad829abb45ddd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musical: {fileID: 0}
+  pause: 0
 --- !u!1 &1020193104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,6 +1046,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -1042,7 +1076,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
-  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1096,6 +1129,8 @@ MonoBehaviour:
   inventory: []
   slots: []
   mappy: {fileID: 1572255698}
+  money: {fileID: 0}
+  unlocked: 0
 --- !u!4 &1455665421
 Transform:
   m_ObjectHideFlags: 0
@@ -1169,7 +1204,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d0c957a59f3d14c019100a9d172d88a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f201785103e9f040a9695d72c93fd6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1572255702
 Transform:
@@ -1257,6 +1292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
+  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0
@@ -1278,6 +1314,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1946120747}
   - 82: {fileID: 1946120746}
+  - 114: {fileID: 1946120748}
   m_Layer: 0
   m_Name: Musical
   m_TagString: Untagged
@@ -1301,7 +1338,7 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 5
+  MinDistance: 10
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -1355,6 +1392,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!114 &1946120748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1946120745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03bc71488ceb6f4894876333ef937d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1994516100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,7 +1463,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.703619
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
