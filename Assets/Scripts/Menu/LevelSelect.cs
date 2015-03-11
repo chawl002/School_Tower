@@ -4,8 +4,8 @@ using System.Collections;
 public class LevelSelect : MonoBehaviour {
 
 	public GameObject[] Levels;
-	private int CurrentLevel = 1;
-	private int LevelCounter = 0;
+	private static int CurrentLevel = 1;
+	private static int LevelCounter = 0;
 	
 	//public EnemyMove enemyMove;
 	private static int sceneLevel_win;
@@ -13,9 +13,11 @@ public class LevelSelect : MonoBehaviour {
 	void Update()
 	{
 		sceneLevel_win = MoneyHandle.curLevel_win;
+		CurrentLevel = sceneLevel_win + 2;
 	}
-	/*void Start()
+	void Start ()
 	{
+		Debug.Log (CurrentLevel);
 		foreach (GameObject Level  in Levels) {
 			//Only show levels by completion
 			if (LevelCounter < CurrentLevel)
@@ -25,7 +27,8 @@ public class LevelSelect : MonoBehaviour {
 			
 			LevelCounter = LevelCounter + 1;
 		}
-	}*/
+		LevelCounter = 0;
+	}
 
 	public void GoBack(){
 
