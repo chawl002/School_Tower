@@ -63,6 +63,7 @@ MonoBehaviour:
   our: {fileID: 0}
   proj: {fileID: 127066, guid: 4df8b7e503e9f43d9ad8360f51a1f0c6, type: 2}
   projClone: {fileID: 0}
+  interval: 2
 --- !u!114 &11408286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6158b404cb7c4ec6a8783c58683b992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BLOCK: 0
 --- !u!114 &11496186
 MonoBehaviour:
   m_ObjectHideFlags: 0
