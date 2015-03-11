@@ -20,6 +20,7 @@ public class MoneyHandle : MonoBehaviour {
 	public bool panic = false;
 
 	public static int curLevel_win;
+	public static int currentLevel;
 
 	// Use this for initialization
 	void Start () {
@@ -62,21 +63,25 @@ public class MoneyHandle : MonoBehaviour {
 		if (timerm >= 1 && Application.loadedLevelName == "ElementaryEntryLevel"){
 
 			curLevel_win = 0;
+			currentLevel = curLevel_win + 1;
 			Application.LoadLevel("VictoryScene");
 		}
 		if (timerm >= 2 && Application.loadedLevelName == "ElementaryLevelOne"){
 
 			curLevel_win = 1;
+			currentLevel = curLevel_win + 1;
 			Application.LoadLevel("VictoryScene");
 		}
 		if (timerm >= 3 && Application.loadedLevelName == "HighSchoolLevel"){
 
 			curLevel_win = 2;
+			currentLevel = curLevel_win + 1;
 			Application.LoadLevel("VictoryScene");
 		}
 		if (timerm >= 3 && Application.loadedLevelName == "CollegeLevel"){
 
 			curLevel_win = 3;
+			currentLevel = curLevel_win + 1;
 			Application.LoadLevel("VictoryScene");
 		}
 

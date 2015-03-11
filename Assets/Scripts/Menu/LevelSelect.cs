@@ -13,7 +13,7 @@ public class LevelSelect : MonoBehaviour {
 	void Update()
 	{
 		sceneLevel_win = MoneyHandle.curLevel_win;
-		CurrentLevel = sceneLevel_win + 2;
+		CurrentLevel = MoneyHandle.currentLevel+1;
 	}
 	void Start ()
 	{
