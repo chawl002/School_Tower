@@ -82,7 +82,7 @@ public class MoneyHandle : MonoBehaviour {
 
 			curLevel_win = 3;
 			currentLevel = curLevel_win + 1;
-			Application.LoadLevel("VictoryScene");
+			Application.LoadLevel("EndScene");
 		}
 
 

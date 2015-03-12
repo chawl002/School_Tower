@@ -31,3 +31,5 @@ EditorBuildSettings:
     path: Assets/Scene/Instructions3.unity
   - enabled: 1
     path: Assets/Scene/Instructions4.unity
+  - enabled: 1
+    path: Assets/Scene/EndScene.unity

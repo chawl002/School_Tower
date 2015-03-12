@@ -72,4 +72,7 @@ public class LevelSelect : MonoBehaviour {
 			Application.LoadLevel ("GameSelection");
 		}
 	}
+	public void EndReplay(){
+		Application.LoadLevel ("OpeningTitle");
+	}
 }
