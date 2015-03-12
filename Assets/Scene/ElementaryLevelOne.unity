@@ -453,9 +453,9 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: af48806bf7adf46aa88d4d00f764e30f, type: 3}
     m_FontSize: 60
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_Alignment: 2
     m_WordWrap: 0
     m_RichText: 1
@@ -781,6 +781,7 @@ MonoBehaviour:
   mappy: {fileID: 1572255698}
   money: {fileID: 0}
   unlocked: 0
+  paused: 0
 --- !u!4 &1455665421
 Transform:
   m_ObjectHideFlags: 0

@@ -85,7 +85,7 @@ MonoBehaviour:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: .160250887, g: .573529422, b: .197303444, a: 1}
+      m_TextColor: {r: .262745112, g: .501960814, b: .972549021, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
@@ -127,9 +127,9 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: af48806bf7adf46aa88d4d00f764e30f, type: 3}
     m_FontSize: 20
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_Alignment: 2
     m_WordWrap: 0
     m_RichText: 1
@@ -166,6 +166,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89445db596eb4466fb921ee7d89d5979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Gum: 0
+  Pap: 0
+  Bas: 0
+  Dog: 0
+  Pla: 0
+  Can: 0
+  Tac: 0
+  Eff: 0
 --- !u!212 &21260070
 SpriteRenderer:
   m_ObjectHideFlags: 1

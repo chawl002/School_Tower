@@ -7,7 +7,7 @@ public class QueenB : MonoBehaviour {
 	void Start () {
 
 		GetComponent<EnemyHP> ().HP--;
-		GetComponent<EnemyMove> ().speed = GetComponent<EnemyMove> ().speed * 1.8f;
+		GetComponent<EnemyMove> ().speed = GetComponent<EnemyMove> ().speed * 1.5f;
 	
 	}
 	

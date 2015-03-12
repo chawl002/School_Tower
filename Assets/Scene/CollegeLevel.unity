@@ -456,6 +456,7 @@ GameObject:
   - 114: {fileID: 822607250}
   - 114: {fileID: 822607255}
   - 114: {fileID: 822607254}
+  - 114: {fileID: 822607256}
   m_Layer: 0
   m_Name: money
   m_TagString: Untagged
@@ -624,6 +625,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musical: {fileID: 0}
   pause: 0
+--- !u!114 &822607256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11473306, guid: 01c8528904b0d48d98353f8a28c021b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 93673336}
+  m_GameObject: {fileID: 822607249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89445db596eb4466fb921ee7d89d5979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gum: 0
+  Pap: 0
+  Bas: 0
+  Dog: 0
+  Pla: 0
+  Can: 0
+  Tac: 0
+  Eff: 0
 --- !u!1 &931076035
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6158b404cb7c4ec6a8783c58683b992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BLOCK: 0
 --- !u!61 &1058328236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -946,6 +968,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -975,7 +998,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
-  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1190,6 +1212,7 @@ MonoBehaviour:
   mappy: {fileID: 1603372039}
   money: {fileID: 0}
   unlocked: 0
+  paused: 0
 --- !u!4 &1455665421
 Transform:
   m_ObjectHideFlags: 0
@@ -1627,6 +1650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
+  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0

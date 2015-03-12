@@ -370,7 +370,7 @@ MonoBehaviour:
   deltapos: {x: 0, y: 0}
   damageval: .25
   speed: .0149999997
-  sspeed: .0149999997
+  sspeed: .00499999989
   dir: {x: 0, y: 0}
 --- !u!114 &204630184
 MonoBehaviour:
@@ -792,6 +792,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: afd98073d69934a1b85b34dd32d13a87, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.04700005
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afd98073d69934a1b85b34dd32d13a87, type: 2}
   m_RootGameObject: {fileID: 2111395549}
@@ -1191,6 +1195,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -1220,7 +1225,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
-  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1232,7 +1236,7 @@ RectTransform:
   m_LocalScale: {x: .020790631, y: .020790631, z: .020790631}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 3.30999994, y: -5.73000002}
@@ -1268,14 +1272,15 @@ MonoBehaviour:
   SPAWNTOWER: -1
   LastSpawnTower: -1
   click: 0
-  SlotX: 5
-  SlotY: 6
+  SlotX: 2
+  SlotY: 4
   skin: {fileID: 11400000, guid: 3c1fddd4eb3a6fe4cb0da9d79b95e020, type: 2}
   inventory: []
   slots: []
   mappy: {fileID: 1572255698}
   money: {fileID: 0}
   unlocked: 0
+  paused: 0
 --- !u!4 &1455665421
 Transform:
   m_ObjectHideFlags: 0
@@ -1437,6 +1442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
+  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0
@@ -1756,4 +1762,4 @@ Transform:
   - {fileID: 522021569}
   - {fileID: 279232050}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12

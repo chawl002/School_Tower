@@ -96,6 +96,7 @@ public class MoneyHandle : MonoBehaviour {
 		string textraZ = "";
 		if (timers < 10)
 						textraZ = "0";
-		GUI.Label (new Rect (-50, 0, Screen.width, Screen.height), "\n$ " + (mon/100).ToString() + "." + mextraZ + (mon%100).ToString() + "\n\n\n\n" + timerm.ToString() + ":" + textraZ + timers.ToString(), guicust);
+		GUI.color = Color.red;
+		GUI.Box (new Rect (-50, 0, Screen.width, Screen.height), "\n$ " + (mon/100).ToString() + "." + mextraZ + (mon%100).ToString() + "\n\n" + timerm.ToString() + ":" + textraZ + timers.ToString(), guicust);
 	}
 }
