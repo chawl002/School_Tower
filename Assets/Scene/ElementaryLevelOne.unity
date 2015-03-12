@@ -111,7 +111,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 460070, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 160070, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
       propertyPath: m_Name
@@ -213,6 +213,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04556bd3f677dd441858340586e6f41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mover: 0
+  clicked: 0
+  rate: 2
+  money: {fileID: 0}
+  num_events: 4
+  found_object: {fileID: 0}
 --- !u!61 &377891863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -329,13 +335,13 @@ MonoBehaviour:
   enemy1: {fileID: 100000, guid: c23ecb18664c44b2191cc79504d07d1b, type: 2}
   enemy2: {fileID: 173324, guid: f4c50abfbe6d8464a96bef787f88585f, type: 2}
   enemy3: {fileID: 105962, guid: 6266278af16874963aef794db40e8de2, type: 2}
-  enemy4: {fileID: 0}
+  enemy4: {fileID: 100000, guid: 588109f8d9ef241d9b312ec2fad97e12, type: 2}
   enemy5: {fileID: 0}
   enemy6: {fileID: 0}
   spawn1: 100
   spawn2: 25
-  spawn3: 10
-  spawn4: 0
+  spawn3: 15
+  spawn4: 15
   spawn5: 0
   spawn6: 0
 --- !u!4 &464482841
@@ -696,7 +702,6 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -726,6 +731,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
+  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1063,7 +1069,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0
@@ -1283,7 +1288,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a4f965a5d00df431c802f24e5bbcd8f7, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a4f965a5d00df431c802f24e5bbcd8f7, type: 2}
       propertyPath: m_Name
