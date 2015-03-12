@@ -100,7 +100,7 @@ public class EnemyMove : MonoBehaviour {
 		// Waypoint reached, select next one
 		else {
 
-			Debug.Log("reach this");
+			//Debug.Log("reach this");
 
 			Vector2 currentWP;
 			Vector2 nextWP;

@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -15,11 +15,13 @@ public class BellReady_1 : MonoBehaviour
 	public int rate = 2;
 	float temp = 0;
 	bool fadeAudio = false;
+	public GameObject money;
 
 	//used to instanciate random events when bell is clicked
-	public int max = 3; //max size of EventDatabase list (calling item from 
+	public int num_events = 4; //max size of EventDatabase list (calling item from 
 	private int rand_event; //event value number in list
 	private bool bell_event = true; //controls number of times rand function is called
+	public GameObject found_object;
 
 	// Use this for initialization
 	void Start () {
@@ -43,9 +45,29 @@ public class BellReady_1 : MonoBehaviour
 			//pick a random event to execute once
 			if(bell_event)
 			{	
-				rand_event = Random.Range(0, max);
+				rand_event = Random.Range(0, 100);
 				//Debug.Log(rand_event);
 				bell_event = false;
+				money = GameObject.Find ("money");
+				if(rand_event < 25) //Player finds 5 dollar bill from bell event
+				{
+					Debug.Log("Player gains 500 money from bell");
+					money.GetComponent<MoneyHandle>().mon += 500;
+				}
+				else if(rand_event >= 25 && rand_event < 50) //Player finds 10 dollar bill from bell event
+				{
+					Debug.Log("Player gains 1000 money from bell");
+					money.GetComponent<MoneyHandle>().mon += 1000;
+				}
+				else if(rand_event >= 50 && rand_event < 75){//Player's towers are destroyed
+					Debug.Log("Player towers destroyed");
+					DestroyGameObjectsWithTag("tower");
+					found_object = GameObject.FindWithTag ("tower");
+				}
+				else if(rand_event >= 75){//Enemies are destroyed
+					Debug.Log("Enemies are destroyed");
+					DestroyGameObjectsWithTag("enemy");
+				} 
 			}
 
 			//updates time variable
@@ -121,4 +143,12 @@ public class BellReady_1 : MonoBehaviour
 			clicked = true;
 		} 
 	}
-}*/
+
+	public static void DestroyGameObjectsWithTag(string tag)
+	{
+		GameObject[] gameObjects = GameObject.FindGameObjectsWithTag(tag);
+		foreach (GameObject target in gameObjects) {
+			GameObject.Destroy(target);
+		}
+	}
+}
