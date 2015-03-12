@@ -18,12 +18,15 @@ public class SpawnPaperboy : MonoBehaviour {
 	void Start () {
 		Inv = GameObject.Find("Inventory");
 		Id = GameObject.Find("Item Database");
+
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		//time between clicks - checks to make sure double clicks are within the same second
+		//Debug.Log (Inv.GetComponent<Inventory> ().SPAWNTOWER);
+
 		if (fclick == true) {
 			temp += Time.deltaTime;
 			if(temp >= 1)
@@ -38,6 +41,7 @@ public class SpawnPaperboy : MonoBehaviour {
 	//mouseover registers where the colliders are in the map
 	void OnMouseOver() {
 		//If null item is clicked, do nothing
+		//Debug.Log (Inv.GetComponent<Inventory> ().SPAWNTOWER);
 		if (Inv.GetComponent<Inventory> ().SPAWNTOWER != -1) 
 		{
 			//If there hasnt been a click before, it is the first click
