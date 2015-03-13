@@ -73,7 +73,6 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
-    tileSizeHint: 0
   m_NavMesh: {fileID: 19400000, guid: 2d85cd48fdfef604189f0f6f29e4c5dc, type: 2}
 --- !u!1001 &26719017
 Prefab:
@@ -112,7 +111,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 409938, guid: 0c3ab4fe0c0265a4290ea17c3559e543, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c3ab4fe0c0265a4290ea17c3559e543, type: 2}
@@ -254,7 +253,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .330000013, y: .330000013}
+  m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &124087977
 MonoBehaviour:
@@ -290,7 +289,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d96c3c4cc9e2441d8a9434f0b5d9bd27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a48788ada19744dabd1cce27950d259, type: 3}
   m_Color: {r: .760784328, g: .760784328, b: .760784328, a: 1}
 --- !u!4 &124087979
 Transform:
@@ -300,7 +299,7 @@ Transform:
   m_GameObject: {fileID: 124087975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.8999996, y: -.870000005, z: -.200000003}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -522,13 +521,13 @@ MonoBehaviour:
   enemy3: {fileID: 197426, guid: 482359e6f2b0eec40b2c6cec26744a00, type: 2}
   enemy4: {fileID: 122152, guid: a9d169adbe5374fcb9040b8858b1c7c4, type: 2}
   enemy5: {fileID: 129082, guid: f172d31a09a2ce349b2bb22fd85e722b, type: 2}
-  enemy6: {fileID: 0}
+  enemy6: {fileID: 100000, guid: d0dc13ebd376c4144a8ea2e22a89bd1f, type: 2}
   spawn1: 100
   spawn2: 10
   spawn3: 15
   spawn4: 25
   spawn5: 50
-  spawn6: 0
+  spawn6: 20
 --- !u!4 &464482841
 Transform:
   m_ObjectHideFlags: 0
@@ -829,7 +828,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d96c3c4cc9e2441d8a9434f0b5d9bd27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a48788ada19744dabd1cce27950d259, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &822607253
 Transform:
@@ -1144,7 +1143,6 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -1174,6 +1172,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
+  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1604,7 +1603,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0
@@ -1654,7 +1652,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 434228, guid: ce422696bd4ba7d47b481e3c0e3f7e4c, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce422696bd4ba7d47b481e3c0e3f7e4c, type: 2}
@@ -1892,13 +1890,13 @@ MonoBehaviour:
   enemy3: {fileID: 150820, guid: 4661a01151e75e74899d99820c03d560, type: 2}
   enemy4: {fileID: 124638, guid: 2cb1b366d35ab7e40bb606e31c4cf144, type: 2}
   enemy5: {fileID: 179520, guid: 75a348d9b2f3cc0428f809d65bd36806, type: 2}
-  enemy6: {fileID: 0}
+  enemy6: {fileID: 100000, guid: efbea692540864e89956a97d49b4016e, type: 2}
   spawn1: 100
   spawn2: 10
   spawn3: 15
   spawn4: 25
   spawn5: 50
-  spawn6: 0
+  spawn6: 20
 --- !u!4 &2048825418
 Transform:
   m_ObjectHideFlags: 0
@@ -1948,7 +1946,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a4f965a5d00df431c802f24e5bbcd8f7, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a4f965a5d00df431c802f24e5bbcd8f7, type: 2}
       propertyPath: m_Name
