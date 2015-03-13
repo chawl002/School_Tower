@@ -43,7 +43,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 6, y: 12}
+  m_Size: {x: .800000012, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11406788
 MonoBehaviour:
@@ -56,6 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6158b404cb7c4ec6a8783c58683b992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BLOCK: 0
 --- !u!114 &11406790
 MonoBehaviour:
   m_ObjectHideFlags: 1
