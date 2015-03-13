@@ -162,14 +162,14 @@ public class EnemyMove : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		//Respond to gum
-		if (other.name == "GUM" || other.name == "GUM(Clone)") {
+		if (other.name == "BubbleGummer" || other.name == "BubbleGummer(Clone)") {
 			
 			Destroy (other.gameObject);
 			sspeed = speed;
 			speed = 0f;
 		}
 
-		if (other.name == "Candy" || other.name == "Candy(Clone)") {
+		if (other.name == "Candier" || other.name == "Candier(Clone)") {
 						Destroy (other.gameObject);
 						speed = speed/1.75f;
 				}

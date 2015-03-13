@@ -35,18 +35,18 @@ public class EnemyHP : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "attack") {
-			if(other.name != "GUM(Clone)" && other.name != "Candy(Clone)" && other.name != "Dodgeball(Clone)")
+			if(other.name != "BubbleGummer(Clone)" && other.name != "Candier(Clone)" && other.name != "Dodgeballer(Clone)")
 			{
 				HP = HP - other.gameObject.GetComponent<damage>().damag;
 			}
 
-			if(other.name == "Dodgeball(Clone)")
+			if(other.name == "Dodgeballer(Clone)")
 			{
 				HP = HP - 1;
 			}
 
 
-			if(other.name != "baseball(Clone)")
+			if(other.name != "Baseballer(Clone)")
 				Destroy (other.gameObject);
 		}
 

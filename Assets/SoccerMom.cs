@@ -22,7 +22,7 @@ public class SoccerMom : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.tag == "attack" && other.name != "GUM(Clone)" && GetComponent<EnemyMove>().speed != 0f) {
+		if (other.tag == "attack" && other.name != "BubbleGummer(Clone)" && other.name != "Candier(Clone)" && GetComponent<EnemyMove>().speed != 0f) {
 
 			if(audioplay == false)
 			{
