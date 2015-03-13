@@ -16,6 +16,7 @@ GameObject:
   - 58: {fileID: 5800000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11452422}
   m_Layer: 0
   m_Name: College_ProfessorF_MR_up
   m_TagString: enemy
@@ -143,6 +144,19 @@ MonoBehaviour:
   speed: .0149999997
   sspeed: .0149999997
   dir: {x: 0, y: 0}
+--- !u!114 &11452422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa5cb051adb904eb7a87a2cf44c21d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
