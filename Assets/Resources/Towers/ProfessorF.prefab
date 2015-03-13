@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11406794}
   - 114: {fileID: 11406796}
   m_Layer: 0
-  m_Name: BigF
+  m_Name: ProfessorF
   m_TagString: tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

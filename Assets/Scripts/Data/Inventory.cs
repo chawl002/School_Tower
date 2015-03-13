@@ -140,7 +140,7 @@ public class Inventory : MonoBehaviour {
 																//if(!paused)
 																{
 																		//	Debug.Log("KING");
-																		if (!(unlocked == false && i == 7)) {
+																		//if (!(unlocked == false && i == 7)) {
 																				if (i == 0 && money.GetComponent<KeepTrack> ().Gum == 1)
 																						break;
 																				if (i == 1 && money.GetComponent<KeepTrack> ().Pap == 1)
@@ -160,7 +160,7 @@ public class Inventory : MonoBehaviour {
 																				spot = slotRect; //position of item in inventory
 																				click = true; 
 																				SPAWNTOWER = slots [i].ItemID;
-																		}
+																		//}
 																}
 														}
 												}
