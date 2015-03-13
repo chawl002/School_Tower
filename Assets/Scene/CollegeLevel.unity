@@ -73,7 +73,6 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
-    tileSizeHint: 0
   m_NavMesh: {fileID: 19400000, guid: 2d85cd48fdfef604189f0f6f29e4c5dc, type: 2}
 --- !u!1001 &93673336
 Prefab:
@@ -137,6 +136,10 @@ Prefab:
     - target: {fileID: 11460068, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
       propertyPath: mon
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460068, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
+      propertyPath: MoneyAllowance
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01c8528904b0d48d98353f8a28c021b8, type: 2}
@@ -425,7 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 22
-  decreaseInterval: 3
+  decreaseInterval: 20
   enemy1: {fileID: 100000, guid: 874214765415a49dc8492c718bdfb9fd, type: 2}
   enemy2: {fileID: 100000, guid: 4947ada6986a84da3970064d014c21b7, type: 2}
   enemy3: {fileID: 100000, guid: e52850d5bee114d5d9d06454c2f7f788, type: 2}
@@ -503,7 +506,7 @@ MonoBehaviour:
   timerm: 0
   victory: 0
   LoadNext: GameSelection
-  MoneyAllowance: 100
+  MoneyAllowance: 500
   AllowanceInterval: 8
   temp: 0
   mtemp: 0
@@ -954,6 +957,7 @@ GameObject:
   - 222: {fileID: 1260197957}
   - 114: {fileID: 1260197956}
   - 223: {fileID: 1260197955}
+  - 114: {fileID: 1260197959}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -975,7 +979,6 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -1005,6 +1008,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
+  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1022,6 +1026,26 @@ RectTransform:
   m_AnchoredPosition: {x: 4.11000013, y: -6.67000008}
   m_SizeDelta: {x: 147.389999, y: 127.559998}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &1260197959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260197954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d25f1e049ca47eda761d2c2b224bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawns:
+  - {fileID: 464482839}
+  - {fileID: 2048825416}
+  - {fileID: 1388139198}
+  - {fileID: 1336657105}
+  - {fileID: 931076035}
+  - {fileID: 1834296584}
+  - {fileID: 684631826}
+  - {fileID: 1334809157}
 --- !u!1 &1334809157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,7 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 20
-  decreaseInterval: 3
+  decreaseInterval: 20
   enemy1: {fileID: 100000, guid: 520a197478f1b4f2b9492547f744f7d3, type: 2}
   enemy2: {fileID: 100000, guid: b58fb8b492085401d99d82b0a5ec0e6e, type: 2}
   enemy3: {fileID: 100000, guid: 958041ed3cb2f4e9593c4f0af9203b63, type: 2}
@@ -1156,7 +1180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 22
-  decreaseInterval: 3
+  decreaseInterval: 20
   enemy1: {fileID: 100000, guid: b4b1009812980416b9f1908e91529c1f, type: 2}
   enemy2: {fileID: 100000, guid: fc15b33dcae884888b1e22dddd602a75, type: 2}
   enemy3: {fileID: 100000, guid: 24dfa50e4afda4ef5af40d630f21daf7, type: 2}
@@ -1657,7 +1681,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0
@@ -1697,8 +1720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95874961838b89540b9b06656415ef07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 20
-  decreaseInterval: 3
+  interval: 25
+  decreaseInterval: 20
   enemy1: {fileID: 100000, guid: b72650577e1074fe9a4bb3ad288689a1, type: 2}
   enemy2: {fileID: 100000, guid: cae6c1a7d3be6472ebb5eda5c9a28893, type: 2}
   enemy3: {fileID: 100000, guid: 419c4cbf7e81844de820043adaf8d078, type: 2}

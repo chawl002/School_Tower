@@ -12,6 +12,7 @@ public class MoneyHandle : MonoBehaviour {
 	public int MoneyAllowance = 100;
 	public int AllowanceInterval = 8;
 
+	public static int colleg_spawn_delay = 0;
 	public float temp = 0;
 	public int mtemp = 0;
 	public GUIStyle guicust;
@@ -47,6 +48,13 @@ public class MoneyHandle : MonoBehaviour {
 		timerf += Time.deltaTime;
 
 		timers = (int)(timerf - (timerf % 1));
+
+		if (timers == 5 && timerm == 0) {
+				
+			colleg_spawn_delay = 1;
+		} else {
+			colleg_spawn_delay = 0;
+		}
 
 		if (timers >= 60) {
 						timers = 0;
