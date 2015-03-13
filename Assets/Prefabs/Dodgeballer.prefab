@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11493834}
   - 82: {fileID: 8238342}
   m_Layer: 0
-  m_Name: Dodgeball
+  m_Name: Dodgeballer
   m_TagString: attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

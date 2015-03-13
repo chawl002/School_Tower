@@ -182,7 +182,7 @@ public class EnemyMove : MonoBehaviour {
 
 		}
 
-		if (other.name == "Tack" || other.name == "Tack(Clone)") {
+		if (other.name == "Tackker" || other.name == "Tackker(Clone)") {
 						Destroy(other.gameObject);
 						GetComponent<EnemyHP> ().HP -= 1;
 						speed = speed / 1.25f;
