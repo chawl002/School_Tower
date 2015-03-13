@@ -7,8 +7,6 @@ public class TowRot : MonoBehaviour {
 	void Start () {
 
 		GetComponent<Transform>().Rotate(0,180, 0);
-
-		//GetComponent
 	
 	}
 	
