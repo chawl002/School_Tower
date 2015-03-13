@@ -34,7 +34,7 @@ public class EnemyHP : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.tag == "attack") {
+		if (other.tag == "attack" && other.name != "BubbleGummer(Clone)") {
 			if(other.name != "BubbleGummer(Clone)" && other.name != "Candier(Clone)" && other.name != "Dodgeballer(Clone)")
 			{
 				HP = HP - other.gameObject.GetComponent<damage>().damag;
@@ -49,6 +49,7 @@ public class EnemyHP : MonoBehaviour {
 			if(other.name != "Baseballer(Clone)")
 				Destroy (other.gameObject);
 		}
+
 
 		//if (other.name == "LINK2(Clone)" || other.name == "droppedmoney(Clone)") 
 		else {

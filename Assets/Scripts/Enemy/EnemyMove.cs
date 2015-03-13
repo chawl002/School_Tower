@@ -162,30 +162,33 @@ public class EnemyMove : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		//Respond to gum
-		if (other.name == "BubbleGummer" || other.name == "BubbleGummer(Clone)") {
+
+		if (speed != 0) {
+						if ((other.name == "BubbleGummer" || other.name == "BubbleGummer(Clone)")) {
 			
-			Destroy (other.gameObject);
-			sspeed = speed;
-			speed = 0f;
-		}
+								Destroy (other.gameObject);
+								sspeed = speed;
+								speed = 0f;
+						}
 
-		if (other.name == "Candier" || other.name == "Candier(Clone)") {
-						Destroy (other.gameObject);
-						speed = speed/1.75f;
-				}
+						if (other.name == "Candier" || other.name == "Candier(Clone)") {
+								Destroy (other.gameObject);
+								speed = speed / 1.75f;
+						}
 
-		if (other.name == "Potio" || other.name == "Potio(Clone)" && GetComponent<EnemyHP>().HP != 0) {
+						if (other.name == "Potio" || other.name == "Potio(Clone)" && GetComponent<EnemyHP> ().HP != 0) {
 			
-			Destroy (other.gameObject);
-			speed = speed * 2f;
-			GetComponent<EnemyHP>().HP += 2;
+								Destroy (other.gameObject);
+								speed = speed * 2f;
+								GetComponent<EnemyHP> ().HP += 2;
 
-		}
+						}
 
-		if (other.name == "Tackker" || other.name == "Tackker(Clone)") {
-						Destroy(other.gameObject);
-						GetComponent<EnemyHP> ().HP -= 1;
-						speed = speed / 1.25f;
+						if (other.name == "Tackker" || other.name == "Tackker(Clone)") {
+								Destroy (other.gameObject);
+								GetComponent<EnemyHP> ().HP -= 1;
+								speed = speed / 1.25f;
+						}
 				}
 
 		
