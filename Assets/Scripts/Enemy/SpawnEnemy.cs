@@ -14,7 +14,7 @@ public class SpawnEnemy : MonoBehaviour {
 	}
 	
 	// gameobject to be spawned
-
+		//up to 6 enemies can appear, but not all are needed
 	public GameObject enemy1 = null;
 	public GameObject enemy2 = null;
 	public GameObject enemy3 = null;
@@ -54,6 +54,7 @@ public class SpawnEnemy : MonoBehaviour {
 			if(rander <= spawn6 && enemy6!=null)
 				enemy = enemy6;
 
+			//do not need this variable...here for error checking in the future if necessary
 			GameObject g = (GameObject)Instantiate(enemy, transform.position, Quaternion.identity);
 			
 			// reset time
