@@ -42,7 +42,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: 7.50000048
+  m_Radius: .699999988
   m_Center: {x: 0, y: 0}
 --- !u!82 &8278674
 AudioSource:
