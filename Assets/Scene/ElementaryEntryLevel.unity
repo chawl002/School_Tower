@@ -155,6 +155,7 @@ GameObject:
   - 114: {fileID: 377891862}
   - 114: {fileID: 377891864}
   - 82: {fileID: 377891865}
+  - 114: {fileID: 377891866}
   m_Layer: 0
   m_Name: SchoolBell
   m_TagString: Untagged
@@ -293,6 +294,23 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &377891866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 377891859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04556bd3f677dd441858340586e6f41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mover: 0
+  clicked: 0
+  rate: 2
+  money: {fileID: 0}
+  num_events: 4
+  found_object: {fileID: 0}
 --- !u!1 &464482839
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,8 +338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95874961838b89540b9b06656415ef07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 5
-  decreaseInterval: 5
+  interval: 8
+  decreaseInterval: 6
   enemy1: {fileID: 171200, guid: 0956830f4ffdb4413abf3cef1db4496b, type: 2}
   enemy2: {fileID: 0}
   enemy3: {fileID: 0}
@@ -692,7 +710,6 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -722,6 +739,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
+  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -939,7 +957,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0
