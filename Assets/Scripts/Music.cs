@@ -15,7 +15,7 @@ public class Music : MonoBehaviour {
 
 	}
 
-	void Awake()
+	/*void Awake()
 	{
 		if (instance != null && instance != this)
 		{
@@ -27,6 +27,6 @@ public class Music : MonoBehaviour {
 			instance = this;
 		}
 		DontDestroyOnLoad(this.gameObject);
-	}
+	}*/
 }
 
