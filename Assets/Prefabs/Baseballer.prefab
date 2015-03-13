@@ -15,7 +15,7 @@ GameObject:
   - 82: {fileID: 8278674}
   - 114: {fileID: 11421396}
   m_Layer: 0
-  m_Name: baseball
+  m_Name: Baseballer
   m_TagString: attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 151466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.66240025, y: -.553555727, z: -.00999999978}
-  m_LocalScale: {x: .0500000007, y: .0500000007, z: .100000001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

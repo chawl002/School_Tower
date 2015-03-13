@@ -73,6 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+    tileSizeHint: 0
   m_NavMesh: {fileID: 19400000, guid: 2d85cd48fdfef604189f0f6f29e4c5dc, type: 2}
 --- !u!1001 &93673336
 Prefab:
@@ -702,6 +703,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -731,7 +733,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
-  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1069,6 +1070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
+  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0

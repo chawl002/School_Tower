@@ -58,7 +58,7 @@ public class SpawnPaperboy : MonoBehaviour {
 				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 				Vector3 pos = new Vector3 (ray.origin.x, ray.origin.y, -0.2f);
 				//place tower
-				Instantiate (Resources.Load ("Towers/" + Id.GetComponent<ItemDatabase>().items[Inv.GetComponent<Inventory> ().SPAWNTOWER].ItemName), pos, transform.rotation);
+				Instantiate (Resources.Load ("Towers/" + Id.GetComponent<ItemDatabase>().items[Inv.GetComponent<Inventory> ().SPAWNTOWER].player_image), pos, transform.rotation);
 
 				//reset variables after tower is placed
 				poop = true;
