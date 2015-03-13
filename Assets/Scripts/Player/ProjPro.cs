@@ -60,7 +60,7 @@ public class ProjPro : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		transform.Translate(lr*8*Time.deltaTime, ud*8*Time.deltaTime, 0);
+		transform.Translate(-lr*8*Time.deltaTime, ud*8*Time.deltaTime, 0);
 		//transform.position = Vector2.MoveTowards(transform.position, , 8 * Time.deltaTime);
 
 		temp += Time.deltaTime;
