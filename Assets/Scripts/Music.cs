@@ -10,6 +10,8 @@ public class Music : MonoBehaviour {
 	{
 		audio.loop = true;
 		audio.rolloffMode = AudioRolloffMode.Custom;
+		audio.maxDistance = 1000;
+		audio.minDistance = 100;
 		if (!instance.audio.playOnAwake)
 			audio.Play ();
 
