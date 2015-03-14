@@ -37,6 +37,12 @@ public class RunOff : MonoBehaviour {
 
 				aud_pain.pitch += 1;
 
+				aud_feet.maxDistance = 1000;
+				aud_feet.minDistance = 100;
+
+				aud_pain.maxDistance = 1000;
+				aud_pain.minDistance = 100;
+
 				aud_pain.Play();
 
 				aud_feet.clip = myAudioClip;

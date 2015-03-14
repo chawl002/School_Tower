@@ -31,6 +31,10 @@ public class SoccerMom : MonoBehaviour {
 
 				aud_pain.clip = myAudioClip;
 
+				aud_pain.minDistance = 100;
+				aud_pain.maxDistance = 1000;
+				aud_pain.pitch = 1f;
+
 				aud_pain.Play();
 			}
 
