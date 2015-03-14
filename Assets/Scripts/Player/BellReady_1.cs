@@ -24,7 +24,7 @@ public class BellReady_1 : MonoBehaviour
 	public int num_events = 4; //max size of EventDatabase list (calling item from 
 	private int rand_event; //event value number in list
 	private bool bell_event = true; //controls number of times rand function is called
-	public GameObject found_object;
+//	public GameObject found_object;
 	
 	// Use this for initialization
 	void Start () {
@@ -48,31 +48,47 @@ public class BellReady_1 : MonoBehaviour
 			//pick a random event to execute once
 			if(bell_event)
 			{	
-				rand_event = Random.Range(0, 100);
+				rand_event = Random.Range(0, 25);
 				//Debug.Log(rand_event);
 				bell_event = false;
 				money = GameObject.Find ("money");
 				if(rand_event < 25) //Player finds 5 dollar bill from bell event
 				{
-					Debug.Log("Player gains 500 money from bell");
-					money.GetComponent<MoneyHandle>().mon += 500;
-					eventMessage = "Player finds 5\n dollar bill";
+					//Debug.Log("Player gains 500 money from bell");
+					
+					if(Application.loadedLevelName == "ElementryEntryLevel"){
+						money.GetComponent<MoneyHandle>().mon += 200;
+						eventMessage = "Player finds 2\n dollar bill";
+					}
+					else if(Application.loadedLevelName == "ElementaryLevelOne"){
+						money.GetComponent<MoneyHandle>().mon += 500;
+						eventMessage = "Player finds 5\n dollar bill";
+					}
+					else if(Application.loadedLevelName == "HighSchoolLevel"){
+						money.GetComponent<MoneyHandle>().mon += 1000;
+						eventMessage = "Player finds 10\n dollar bill";
+					}
+					else if(Application.loadedLevelName == "CollegeLevel"){
+						money.GetComponent<MoneyHandle>().mon += 2000;
+						eventMessage = "Player finds 20\n dollar bill";
+					}
 				}
 				else if(rand_event >= 25 && rand_event < 50) //Player finds 10 dollar bill from bell event
 				{
-					Debug.Log("Player gains 100 money from bell");
-					money.GetComponent<MoneyHandle>().mon += 100;
-					eventMessage = "Player finds 1\n dollar bill";
+					Debug.Log("Random destroy");
+					DestroyGameObjectsWithTag("enemy", true);
+					DestroyGameObjectsWithTag("tower", true);
+					eventMessage = "Everyone is confused\n if class started";
 				}
 				else if(rand_event >= 50 && rand_event < 75){//Player's towers are destroyed
 					Debug.Log("Player towers destroyed");
-					DestroyGameObjectsWithTag("tower");
-					found_object = GameObject.FindWithTag ("tower");
-					eventMessage = "Player's friends \nleft for class";
+					DestroyGameObjectsWithTag("tower", false);
+					//found_object = GameObject.FindWithTag ("tower", false);
+					eventMessage = "Player's troops \nleft for class";
 				}
 				else if(rand_event >= 75){//Enemies are destroyed
 					Debug.Log("Enemies are \ndestroyed");
-					DestroyGameObjectsWithTag("enemy");
+					DestroyGameObjectsWithTag("enemy", false);
 					eventMessage = "Enemies left for class";
 				}
 				msg_tmp = 0f; //displays message begins
@@ -139,7 +155,7 @@ public class BellReady_1 : MonoBehaviour
 	}
 	
 	void OnGUI(){
-		if(msg_tmp < 4.0f){ 
+		if(msg_tmp < 6.0f){ 
 			GUI.Box (new Rect(Input.mousePosition.x,y_pos-Input.mousePosition.y, 200, 50), eventMessage);
 			msg_tmp += Time.deltaTime;
 		}
@@ -160,11 +176,20 @@ public class BellReady_1 : MonoBehaviour
 		} 
 	}
 	
-	public static void DestroyGameObjectsWithTag(string tag)
+	public static void DestroyGameObjectsWithTag(string tag, bool random)
 	{
 		GameObject[] gameObjects = GameObject.FindGameObjectsWithTag(tag);
-		foreach (GameObject target in gameObjects) {
-			GameObject.Destroy(target);
+		if(random == false){
+			foreach (GameObject target in gameObjects) {
+				GameObject.Destroy(target);
+			}
+		}
+		else{
+			foreach (GameObject target in gameObjects) {
+					if(Random.Range(0,100) < 65){
+						GameObject.Destroy(target);
+					}
+			}
 		}
 	}
 }

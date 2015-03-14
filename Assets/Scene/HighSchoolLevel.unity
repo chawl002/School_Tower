@@ -73,7 +73,6 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
-    tileSizeHint: 0
   m_NavMesh: {fileID: 19400000, guid: 2d85cd48fdfef604189f0f6f29e4c5dc, type: 2}
 --- !u!1001 &26719017
 Prefab:
@@ -415,9 +414,8 @@ MonoBehaviour:
   rate: 2
   money: {fileID: 0}
   eventMessage: 
-  y_pos: 250
+  y_pos: 550
   num_events: 4
-  found_object: {fileID: 0}
 --- !u!61 &377891863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -718,6 +716,7 @@ GameObject:
   - 114: {fileID: 822607254}
   - 114: {fileID: 822607255}
   - 114: {fileID: 822607256}
+  - 114: {fileID: 822607257}
   m_Layer: 0
   m_Name: money
   m_TagString: Untagged
@@ -871,6 +870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musical: {fileID: 0}
   pause: 0
+  Menu: {fileID: 0}
 --- !u!114 &822607255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,6 +906,18 @@ MonoBehaviour:
   Can: 0
   Tac: 0
   Eff: 0
+--- !u!114 &822607257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11408596, guid: 01c8528904b0d48d98353f8a28c021b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 93673336}
+  m_GameObject: {fileID: 822607249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67969fff7cbe24f1e95b00ef6bec0a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &923756259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,6 +1393,7 @@ MonoBehaviour:
   poop: 0
   Inv: {fileID: 0}
   Id: {fileID: 0}
+  money: {fileID: 0}
 --- !u!61 &1603372041
 BoxCollider2D:
   m_ObjectHideFlags: 0
