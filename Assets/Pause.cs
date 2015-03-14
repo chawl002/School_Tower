@@ -5,6 +5,8 @@ public class Pause : MonoBehaviour {
 
 	public GameObject musical;
 	public bool pause = false;
+	GameObject PauseClone;
+	public GameObject Menu;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +25,8 @@ public class Pause : MonoBehaviour {
 								musical.GetComponent<AudioSource>().volume = 0.3f;
 								musical.GetComponent<AudioSource>().pitch = musical.GetComponent<AudioSource>().pitch/1.5f;
 								pause = true;
+								Vector3 pos = transform.position;
+								PauseClone = Instantiate(Menu, pos, transform.rotation) as GameObject;
 
 
 								
@@ -33,6 +37,7 @@ public class Pause : MonoBehaviour {
 								musical.GetComponent<AudioSource>().volume = 1f;
 								musical.GetComponent<AudioSource>().pitch = musical.GetComponent<AudioSource>().pitch*1.5f;
 								pause = false;
+								Destroy(PauseClone);
 
 
 						}

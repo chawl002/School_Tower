@@ -372,6 +372,7 @@ GameObject:
   - 114: {fileID: 822607254}
   - 114: {fileID: 822607256}
   - 114: {fileID: 822607255}
+  - 114: {fileID: 822607257}
   m_Layer: 0
   m_Name: money
   m_TagString: Untagged
@@ -560,6 +561,18 @@ MonoBehaviour:
   Defeat: 0
   unlocked: 0
   inv: {fileID: 0}
+--- !u!114 &822607257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11408596, guid: 01c8528904b0d48d98353f8a28c021b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 93673336}
+  m_GameObject: {fileID: 822607249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67969fff7cbe24f1e95b00ef6bec0a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1020193104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1024,7 @@ MonoBehaviour:
   poop: 0
   Inv: {fileID: 0}
   Id: {fileID: 0}
+  money: {fileID: 0}
 --- !u!1 &1634748033
 GameObject:
   m_ObjectHideFlags: 0
