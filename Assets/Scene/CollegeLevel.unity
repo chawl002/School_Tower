@@ -73,6 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+    tileSizeHint: 0
   m_NavMesh: {fileID: 19400000, guid: 2d85cd48fdfef604189f0f6f29e4c5dc, type: 2}
 --- !u!1001 &93673336
 Prefab:
@@ -261,6 +262,8 @@ MonoBehaviour:
   clicked: 0
   rate: 2
   money: {fileID: 0}
+  eventMessage: 
+  y_pos: 250
   num_events: 4
   found_object: {fileID: 0}
 --- !u!61 &377891863
@@ -592,7 +595,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d96c3c4cc9e2441d8a9434f0b5d9bd27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a48788ada19744dabd1cce27950d259, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &822607253
 Transform:
@@ -979,6 +982,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1260197956
@@ -1008,7 +1012,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260197954}
-  m_HideIfInvisible: 0
 --- !u!224 &1260197958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1681,6 +1684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
+  m_DragThreshold: 5
 --- !u!4 &1634748037
 Transform:
   m_ObjectHideFlags: 0
@@ -1755,6 +1759,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1946120747}
   - 82: {fileID: 1946120746}
+  - 114: {fileID: 1946120748}
   m_Layer: 0
   m_Name: Musical
   m_TagString: Untagged
@@ -1770,7 +1775,7 @@ AudioSource:
   m_GameObject: {fileID: 1946120745}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: dea478fa8695c46caa4a43c6ee6edf93, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 191e30b9870ea484d8c2068943428171, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1832,6 +1837,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
+--- !u!114 &1946120748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1946120745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03bc71488ceb6f4894876333ef937d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1994516100
 GameObject:
   m_ObjectHideFlags: 0
