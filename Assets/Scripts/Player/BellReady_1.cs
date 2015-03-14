@@ -18,6 +18,7 @@ public class BellReady_1 : MonoBehaviour
 	bool fadeAudio = false;
 	public GameObject money;
 	public string eventMessage;
+	public float y_pos = 250;
 	
 	//used to instanciate random events when bell is clicked
 	public int num_events = 4; //max size of EventDatabase list (calling item from 
@@ -53,14 +54,15 @@ public class BellReady_1 : MonoBehaviour
 				money = GameObject.Find ("money");
 				if(rand_event < 25) //Player finds 5 dollar bill from bell event
 				{
-					Debug.Log("Player gains $5 from bell");
+					Debug.Log("Player gains 500 money from bell");
 					money.GetComponent<MoneyHandle>().mon += 500;
 					eventMessage = "Player finds 5\n dollar bill";
 				}
 				else if(rand_event >= 25 && rand_event < 50) //Player finds 10 dollar bill from bell event
 				{
-					Debug.Log("Player gains $1 from bell");
+					Debug.Log("Player gains 100 money from bell");
 					money.GetComponent<MoneyHandle>().mon += 100;
+					eventMessage = "Player finds 1\n dollar bill";
 				}
 				else if(rand_event >= 50 && rand_event < 75){//Player's towers are destroyed
 					Debug.Log("Player towers destroyed");
@@ -138,7 +140,7 @@ public class BellReady_1 : MonoBehaviour
 	
 	void OnGUI(){
 		if(msg_tmp < 4.0f){ 
-			GUI.Box (new Rect(Input.mousePosition.x,200-Input.mousePosition.y, 200, 50), eventMessage);
+			GUI.Box (new Rect(Input.mousePosition.x,y_pos-Input.mousePosition.y, 200, 50), eventMessage);
 			msg_tmp += Time.deltaTime;
 		}
 	}

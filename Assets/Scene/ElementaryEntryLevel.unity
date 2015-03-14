@@ -309,6 +309,8 @@ MonoBehaviour:
   clicked: 0
   rate: 2
   money: {fileID: 0}
+  eventMessage: 
+  y_pos: 550
   num_events: 4
   found_object: {fileID: 0}
 --- !u!1 &464482839
