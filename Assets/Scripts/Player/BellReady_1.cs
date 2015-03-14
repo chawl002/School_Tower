@@ -53,15 +53,14 @@ public class BellReady_1 : MonoBehaviour
 				money = GameObject.Find ("money");
 				if(rand_event < 25) //Player finds 5 dollar bill from bell event
 				{
-					Debug.Log("Player gains 500 money from bell");
+					Debug.Log("Player gains $5 from bell");
 					money.GetComponent<MoneyHandle>().mon += 500;
 					eventMessage = "Player finds 5\n dollar bill";
 				}
 				else if(rand_event >= 25 && rand_event < 50) //Player finds 10 dollar bill from bell event
 				{
-					Debug.Log("Player gains 1000 money from bell");
-					money.GetComponent<MoneyHandle>().mon += 1000;
-					eventMessage = "Player finds 10\n dollar bill";
+					Debug.Log("Player gains $1 from bell");
+					money.GetComponent<MoneyHandle>().mon += 100;
 				}
 				else if(rand_event >= 50 && rand_event < 75){//Player's towers are destroyed
 					Debug.Log("Player towers destroyed");
