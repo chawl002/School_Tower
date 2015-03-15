@@ -48,7 +48,7 @@ public class BellReady_1 : MonoBehaviour
 			//pick a random event to execute once
 			if(bell_event)
 			{	
-				rand_event = Random.Range(0, 25);
+				rand_event = Random.Range(0, 100);
 				//Debug.Log(rand_event);
 				bell_event = false;
 				money = GameObject.Find ("money");
@@ -78,7 +78,7 @@ public class BellReady_1 : MonoBehaviour
 					Debug.Log("Random destroy");
 					DestroyGameObjectsWithTag("enemy", true);
 					DestroyGameObjectsWithTag("tower", true);
-					eventMessage = "Everyone is confused\n if class started";
+					eventMessage = "Some enemies and troops \n went to class";
 				}
 				else if(rand_event >= 50 && rand_event < 75){//Player's towers are destroyed
 					Debug.Log("Player towers destroyed");
